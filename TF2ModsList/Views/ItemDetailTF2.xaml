@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TF2ModsList.Views.ItemDetailTF2"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout x:Name="StackLyt">
+            <Label FontSize="Title" Text="{Binding DetailItem.Title}" Margin="0,15,0,0"/>
+            <BoxView HeightRequest="1" BackgroundColor="Black"/>
+            <Image Source="{Binding DetailItem.MainPicture}" Aspect="AspectFill" HorizontalOptions="Fill"/>
+            <Button x:Name="AboveGalleryBut" Text="Show gallery" Clicked="ShowHideGallery_Clicked" />
+            <Grid x:Name="GridImage" BackgroundColor="Silver" IsVisible="false" />
+            <Button x:Name="BelowGalleryBut" Text="Hide gallery" Clicked="ShowHideGallery_Clicked" IsVisible="false"/>
+            <Label FontSize="Subtitle">Description</Label>
+            <Label TextType="Html" Text="{Binding DetailItem.Description}"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
