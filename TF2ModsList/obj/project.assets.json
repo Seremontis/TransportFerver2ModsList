@@ -779,11 +779,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList\\TF2ModsList.csproj",
+      "projectUniqueName": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList\\TF2ModsList.csproj",
       "projectName": "TF2ModsList",
-      "projectPath": "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList\\TF2ModsList.csproj",
+      "projectPath": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList\\TF2ModsList.csproj",
       "packagesPath": "C:\\Users\\komp2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList\\obj\\",
+      "outputPath": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

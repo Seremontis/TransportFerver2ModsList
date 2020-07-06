@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList.Android\\TF2ModsList.Android.csproj": {}
+    "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList.Android\\TF2ModsList.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList.Android\\TF2ModsList.Android.csproj": {
+    "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList.Android\\TF2ModsList.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList.Android\\TF2ModsList.Android.csproj",
+        "projectUniqueName": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList.Android\\TF2ModsList.Android.csproj",
         "projectName": "TF2ModsList.Android",
-        "projectPath": "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList.Android\\TF2ModsList.Android.csproj",
+        "projectPath": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList.Android\\TF2ModsList.Android.csproj",
         "packagesPath": "C:\\Users\\komp2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList.Android\\obj\\",
+        "outputPath": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList\\TF2ModsList.csproj": {
-                "projectPath": "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList\\TF2ModsList.csproj"
+              "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList\\TF2ModsList.csproj": {
+                "projectPath": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList\\TF2ModsList.csproj"
               }
             }
           }
@@ -54,14 +54,14 @@
         }
       }
     },
-    "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList\\TF2ModsList.csproj": {
+    "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList\\TF2ModsList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList\\TF2ModsList.csproj",
+        "projectUniqueName": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList\\TF2ModsList.csproj",
         "projectName": "TF2ModsList",
-        "projectPath": "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList\\TF2ModsList.csproj",
+        "projectPath": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList\\TF2ModsList.csproj",
         "packagesPath": "C:\\Users\\komp2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList\\obj\\",
+        "outputPath": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

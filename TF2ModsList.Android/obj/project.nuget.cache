@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ygd8dLOu1/zsvFEjPUd78HyBEuB/z/QVQZxG5mwLRKQM55T8fkbWk+Sl4m9iFeZQjsstR4tUKGNbZWDbbzrCoA==",
+  "dgSpecHash": "sm7RBT0BMdgE35O7w7jLHneTuWEl+yKZ3aPf2LM7QcZh73uGQ5fUtkROGWqAZcfPkIlM+mTiqyP8+aoYnD+aJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList.Android\\TF2ModsList.Android.csproj",
+  "projectFilePath": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList.Android\\TF2ModsList.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\komp2\\.nuget\\packages\\htmlagilitypack\\1.11.24\\htmlagilitypack.1.11.24.nupkg.sha512",
     "C:\\Users\\komp2\\.nuget\\packages\\simpleinjector\\5.0.2\\simpleinjector.5.0.2.nupkg.sha512",

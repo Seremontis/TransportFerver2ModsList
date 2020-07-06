@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cr9HMhLsDUHqRRCe1ixKNc8UL9qXkDI3/OrSj1LexMF7mncBeHLFWIsGSncZrXBZu+BZgqoRSUK5DG6RamaFxg==",
+  "dgSpecHash": "TRhR+B5W62Maso+9sK2bf6mRnYymfvda0OEdBbG4Lpb5eZ6qy+WY1it6lsHRH82VMTsPQ1AkkOVXyXF3Al8svA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\komp2\\Documents\\GitHub\\TF2ModsList\\TF2ModsList\\TF2ModsList.csproj",
+  "projectFilePath": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\TF2ModsList\\TF2ModsList.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\komp2\\.nuget\\packages\\htmlagilitypack\\1.11.24\\htmlagilitypack.1.11.24.nupkg.sha512",
     "C:\\Users\\komp2\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
