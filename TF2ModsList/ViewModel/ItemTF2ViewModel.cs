@@ -3,9 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Threading.Tasks;
 using TF2ModsList.Models;
 using TF2ModsList.Services;
-
+using Xamarin.Forms;
 namespace TF2ModsList.ViewModel
 {
     public class ItemTF2ViewModel
@@ -38,9 +39,18 @@ namespace TF2ModsList.ViewModel
         }
         public ItemTF2ViewModel ExecuteData(TF2ItemMenu itemMenu)
         {
-            _dataOperation.Html = _webOperation.ReadWeb(itemMenu.Path);
-            ListItems = _dataOperation.ReturnModsItem();
-            _NameCategory = itemMenu.NameItem;
+            try
+            {
+                _dataOperation.Html = _webOperation.ReadWeb(itemMenu.Path);
+                ListItems = _dataOperation.ReturnModsItem();
+                _NameCategory = itemMenu.NameItem;
+            }
+
+            catch (Exception)
+            {
+                Application.Current.MainPage.DisplayAlert("Problem", "Wystąpił problem, przepraszamy", "Koniec");
+                Environment.Exit(0);
+            }
             return this;
         }
     }

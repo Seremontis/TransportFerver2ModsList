@@ -12,13 +12,13 @@ namespace TF2ModsList
 {
     public partial class App : Application
     {
-        private static Container _iocContainer= new SimpleInjector.Container();
+        private static Container _iocContainer;
         public App()
         {
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
-
+            IocContainer = new SimpleInjector.Container();
             IocContainer.Register<IDataOperation, DataOperation>(Lifestyle.Transient);
             IocContainer.Register<IWebOperation, WebOperation>(Lifestyle.Transient);
             IocContainer.Register<MenuTF2ViewModel>();

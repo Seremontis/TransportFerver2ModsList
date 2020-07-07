@@ -31,6 +31,13 @@ namespace TF2ModsList.Views
  
         }
 
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            var image = (Image)sender;
+            var uri = (Uri)image.Source.GetValue(UriImageSource.UriProperty);
+            Navigation.PushAsync(new PictureFullScreen(uri));
+        }
+
         private string GetString(Button button)
         {
             if(button.Text=="Show gallery")
@@ -46,7 +53,6 @@ namespace TF2ModsList.Views
                 return value;
             }
         }
-
 
         private void ReturnImageToGrid()
         {
@@ -96,12 +102,18 @@ namespace TF2ModsList.Views
             {
                 Source = uri,
                 Aspect=Aspect.AspectFill,
+            };           
+            var tapped = new TapGestureRecognizer();
+            tapped.Tapped += (sender, e) =>
+            {
+                TapGestureRecognizer_Tapped(sender, e);
             };
+            image.GestureRecognizers.Add(tapped);
             Grid.SetRow(image, rowNumber);
             Grid.SetColumn(image, columnNumber);
             return image;
         }
 
-
+       
     }
 }

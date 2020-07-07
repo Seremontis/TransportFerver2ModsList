@@ -1,5 +1,6 @@
 ﻿using HtmlAgilityPack;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using TF2ModsList.Models;
 using TF2ModsList.Services;
 using TF2ModsList.ViewModel;

@@ -5,8 +5,10 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading.Tasks;
 using TF2ModsList.Models;
 using TF2ModsList.Services;
+using Xamarin.Forms;
 
 namespace TF2ModsList.ViewModel
 {
@@ -27,12 +29,21 @@ namespace TF2ModsList.ViewModel
         {
             this._operationData = operationData;
             this._webOperation = webOperation;
+
         }
 
         public MenuTF2ViewModel ExecuteData()
-        {           
-            _operationData.Html=_webOperation.ReadWeb();
-            MenuItems = _operationData.ReturnMainMenuTF2();
+        {
+            try
+            {
+                _operationData.Html = _webOperation.ReadWeb();
+                _MenutItems = _operationData.ReturnMainMenuTF2();
+            }
+            catch (Exception)
+            {
+                Application.Current.MainPage.DisplayAlert("Problem", "Wystąpił problem, przepraszamy", "Koniec");
+                Environment.Exit(0);
+            }
             return this;
         }
     }

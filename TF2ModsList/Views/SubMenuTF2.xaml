@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="TF2ModsList.Views.SubMenuTF2"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False" Style="{StaticResource BgContent}">
     <StackLayout>
         <ListView ItemsSource="{Binding SubItems}" ItemTapped="SubMenu_ItemTapped">
             <ListView.Header>

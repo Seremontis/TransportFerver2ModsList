@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using TF2ModsList.Models;
 using TF2ModsList.Services;
 using Xamarin.Forms;
@@ -36,9 +37,18 @@ namespace TF2ModsList.ViewModel
 
         public DetailModTF2ViewModel ExecuteData(Mod itemMenu)
         {
-            _UriSource = itemMenu.UriPage.ToString();
-            _dataOperation.Html=_webOperation.ReadWeb(UriSource);
-            _DetailItem = _dataOperation.ReturnDetailModTF2();
+            try
+            {
+                _UriSource = itemMenu.UriPage.ToString();
+                _dataOperation.Html = _webOperation.ReadWeb(UriSource);
+                _DetailItem = _dataOperation.ReturnDetailModTF2();
+            }
+            catch (Exception)
+            {
+                Application.Current.MainPage.DisplayAlert("Problem", "Wystąpił problem, przepraszamy", "Koniec");
+                Environment.Exit(0);
+            }
+
  
             return this;
         }

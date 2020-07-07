@@ -14,7 +14,7 @@
                 <On Platform="Android" Value="Modak-Regular.ttf#Regular"/>
             </OnPlatform>
             <Style TargetType="Label" x:Key="TitleLabel">
-                <Setter Property="FontFamily" Value="{StaticResource ModakFont}"/>
+                <Setter Property="FontFamily" Value="Arial"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="Grid.ColumnSpan" Value="2"/>
                 <Setter Property="TextColor" Value="#31363B"/>
@@ -25,6 +25,22 @@
                 <Setter Property="BorderWidth" Value="2"/>
                 <Setter Property="CornerRadius" Value="35"/>
                 <Setter Property="Margin" Value="5,0"/>
+            </Style>
+            <Style TargetType="ContentPage" x:Key="BgContent">
+                <Setter Property="BackgroundColor" Value="#C5C9E5"/>
+            </Style>
+
+            <Style TargetType="Grid" x:Key="GridTitle">
+                <Setter Property="ColumnDefinitions">
+                    <Setter.Value>
+                        <ColumnDefinitionCollection>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </ColumnDefinitionCollection>
+                    </Setter.Value>
+                </Setter>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

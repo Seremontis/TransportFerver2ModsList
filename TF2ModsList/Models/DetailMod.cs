@@ -16,5 +16,21 @@ namespace TF2ModsList.Models
         public string SpecificationMod { get; set; }
         //Odnośnik do strony źródłowej
         //public string Source { get; set; }
+
+        public string ReturnAuthors
+        {
+            get 
+            {
+                string word = string.Empty;
+                foreach (var item in Authors)
+                {
+                    if (!string.IsNullOrEmpty(word))
+                        word += "<br/>" + item;
+                    else
+                        word += item;
+                }
+                return word;
+            }
+        }
     }
 }

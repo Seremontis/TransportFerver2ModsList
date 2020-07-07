@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="TF2ModsList.Views.MenuTF2"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False" Style="{StaticResource BgContent}">
     <ContentPage.Content>
         <StackLayout>
             <ListView ItemsSource="{Binding MenuItems}" ItemTapped="Menu_ItemTapped">
@@ -28,13 +28,14 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                        <StackLayout Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal">
                                 <Label Text="{Binding NameItem}"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Label x:Name="loadingLabel" Text="Loading..." IsVisible="false"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

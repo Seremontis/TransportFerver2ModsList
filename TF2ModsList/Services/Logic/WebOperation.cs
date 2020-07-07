@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text;
+using System.Threading.Tasks;
 using TF2ModsList.Models;
 
 namespace TF2ModsList.Services
@@ -27,7 +28,7 @@ namespace TF2ModsList.Services
         {
             string codePage = string.Empty;
             var webRequest = PrepareHtmlRequest(uri);
-            using (var response = (HttpWebResponse)webRequest.GetResponse())
+            using (var response = (HttpWebResponse) webRequest.GetResponse())
             {
                 codePage = new StreamReader(response.GetResponseStream()).ReadToEnd();
                 Singleton.Instance.HistoryUri.Add(response.ResponseUri.ToString());

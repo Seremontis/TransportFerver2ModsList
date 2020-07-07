@@ -8,21 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("TF2ModsList.Views.MenuTF2.xaml", "Views/MenuTF2.xaml", typeof(global::TF2ModsList.Views.MenuTF2))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("TF2ModsList.Views.PictureFullScreen.xaml", "Views/PictureFullScreen.xaml", typeof(global::TF2ModsList.Views.PictureFullScreen))]
 
 namespace TF2ModsList.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MenuTF2.xaml")]
-    public partial class MenuTF2 : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\PictureFullScreen.xaml")]
+    public partial class PictureFullScreen : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Label loadingLabel;
+        private global::Xamarin.Forms.Image test;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MenuTF2));
-            loadingLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "loadingLabel");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PictureFullScreen));
+            test = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "test");
         }
     }
 }
