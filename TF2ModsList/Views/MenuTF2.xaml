@@ -8,23 +8,21 @@
              NavigationPage.HasNavigationBar="False" Style="{StaticResource BgContent}">
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding MenuItems}" ItemTapped="Menu_ItemTapped">
-                <ListView.Header>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="1"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
-                        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="Header">Menu:</Label>
-                        <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="#999" HeightRequest="1" WidthRequest="50" />
-                    </Grid>
-                </ListView.Header>
+            <Grid HeightRequest="150">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="1"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="Header">Menu:</Label>
+                <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="#999" HeightRequest="1" WidthRequest="50" />
+            </Grid>
+            <ListView x:Name="TestList" ItemsSource="{Binding MenuItems}" IsVisible="{Binding IsVisible}"  ItemTapped="Menu_ItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -35,7 +33,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Label x:Name="loadingLabel" Text="Loading..." IsVisible="false"/>
+            <Label x:Name="loadingLabel" Text="Loading..." IsVisible="{Binding IsVisibleNegation}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

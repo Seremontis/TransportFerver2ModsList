@@ -1,5 +1,7 @@
-﻿using HtmlAgilityPack;
+﻿using Android.Text.Method;
+using HtmlAgilityPack;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.Threading.Tasks;
 using TF2ModsList.Models;
 using TF2ModsList.Services;
@@ -17,6 +19,8 @@ namespace TF2ModsList.Views
             InitializeComponent();
             this.BindingContext = App.IocContainer.GetInstance<MenuTF2ViewModel>().ExecuteData();
         }
+
+ 
 
         private void Menu_ItemTapped(object sender, ItemTappedEventArgs e)
         {

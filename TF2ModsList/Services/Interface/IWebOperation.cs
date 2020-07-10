@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TF2ModsList.Services
+namespace TF2ModsList.Services.Interface
 {
     public interface IWebOperation
     {
-        HtmlDocument ReadWeb(string uri=null);
+        Task<HtmlDocument> ReadWeb(string uri = null);
     }
 }

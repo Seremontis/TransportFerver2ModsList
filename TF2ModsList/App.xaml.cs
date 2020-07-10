@@ -2,6 +2,8 @@
 using System;
 using System.ComponentModel;
 using TF2ModsList.Services;
+using TF2ModsList.Services.Interface;
+using TF2ModsList.Services.Logic;
 using TF2ModsList.ViewModel;
 using TF2ModsList.Views;
 using Xamarin.Forms;
@@ -21,8 +23,11 @@ namespace TF2ModsList
             IocContainer = new SimpleInjector.Container();
             IocContainer.Register<IDataOperation, DataOperation>(Lifestyle.Transient);
             IocContainer.Register<IWebOperation, WebOperation>(Lifestyle.Transient);
+            IocContainer.Register<ITF2MenuOperation, TF2MenuOperation>(Lifestyle.Transient);
+            IocContainer.Register<ITF2ListItemOperation, TF2ListItemOperation>(Lifestyle.Transient);
+            IocContainer.Register<ITF2DetailModOperation, TF2DetailModOperation>(Lifestyle.Transient);
             IocContainer.Register<MenuTF2ViewModel>();
-            IocContainer.Register<ItemTF2ViewModel>();
+            IocContainer.Register<ItemsTF2ViewModel>();
             IocContainer.Register<DetailModTF2ViewModel>();
 
 

@@ -2,49 +2,59 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using TF2ModsList.Models;
 using TF2ModsList.Services;
+using TF2ModsList.Services.Interface;
 using Xamarin.Forms;
 
 namespace TF2ModsList.ViewModel
 {
-    public class MenuTF2ViewModel
+    public class MenuTF2ViewModel: BaseViewModel
     {
+
         #region fields
         private ObservableCollection<TF2ItemMenu> _MenutItems;
-        private IDataOperation _operationData;
+        private ITF2MenuOperation _operationDataTF2Menu;
         private IWebOperation _webOperation;
+        private bool _isVisible = false;
+        private bool _IsVisibleNegation = true;
+
         #endregion
 
+        #region properties
         public ObservableCollection<TF2ItemMenu> MenuItems
         {
             get { return _MenutItems; }
-            set { _MenutItems = value; }
+            set { _MenutItems = value;
+                NotifyPropertyChanged();
+            }
         }
-        public MenuTF2ViewModel(IDataOperation operationData, IWebOperation webOperation)
-        {
-            this._operationData = operationData;
-            this._webOperation = webOperation;
+        #endregion
 
+        #region methods
+        public MenuTF2ViewModel(ITF2MenuOperation operationData, IWebOperation webOperation)
+        {
+            this._operationDataTF2Menu = operationData;
+            this._webOperation = webOperation;
         }
 
         public MenuTF2ViewModel ExecuteData()
         {
-            try
-            {
-                _operationData.Html = _webOperation.ReadWeb();
-                _MenutItems = _operationData.ReturnMainMenuTF2();
-            }
-            catch (Exception)
-            {
-                Application.Current.MainPage.DisplayAlert("Problem", "Wystąpił problem, przepraszamy", "Koniec");
-                Environment.Exit(0);
-            }
+            Task.Run(async () => _operationDataTF2Menu.Html = await _webOperation.ReadWeb())
+                 .ContinueWith(async (t1) =>
+                 {
+                     MenuItems = await _operationDataTF2Menu.ReturnMainMenuTF2();
+                     IsVisible = true;
+                 });
             return this;
         }
+
+        #endregion
     }
 }

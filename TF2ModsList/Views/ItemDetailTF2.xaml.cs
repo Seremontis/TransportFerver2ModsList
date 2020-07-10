@@ -17,8 +17,8 @@ namespace TF2ModsList.Views
         public ItemDetailTF2(Mod item)
         {
             InitializeComponent();
-            this.BindingContext = App.IocContainer.GetInstance<DetailModTF2ViewModel>().ExecuteData(item);
-            ReturnImageToGrid();
+            Task.Run(() => this.BindingContext = App.IocContainer.GetInstance<DetailModTF2ViewModel>().ExecuteData(item))
+                .ContinueWith(async (t1) => await ReturnImageToGrid());                   
         }
 
         private void ShowHideGallery_Clicked(object sender, EventArgs e)
@@ -26,8 +26,6 @@ namespace TF2ModsList.Views
             Button button = (Button)sender;
             GridImage.IsVisible = !GridImage.IsVisible;
             string value = GetString(button);
-            var but = (Button)StackLyt.FindByName("BelowGalleryBut");
-            but.IsVisible = !but.IsVisible;
  
         }
 
@@ -54,7 +52,7 @@ namespace TF2ModsList.Views
             }
         }
 
-        private void ReturnImageToGrid()
+        private async Task ReturnImageToGrid()
         {
             var context = (DetailModTF2ViewModel)BindingContext;
             var listImage = context.DetailItem.ListPictures;
@@ -68,7 +66,7 @@ namespace TF2ModsList.Views
                 GridImage.Children.Clear();
                 GridImage.ColumnDefinitions.Clear();
                 GridImage.RowDefinitions.Clear();
-                int maxElementInRow = 4;
+                int maxElementInRow = 3;
                 AddColumn(maxElementInRow);
                 AddRow(listImage.Count / maxElementInRow);
                 for (int i = 0; i < listImage.Count; i++)
@@ -96,6 +94,7 @@ namespace TF2ModsList.Views
                 GridImage.RowDefinitions.Add(definition);
             }
         }
+
         private Image LoadImage(Uri uri,int columnNumber,int rowNumber)
         {
             Image image = new Image()

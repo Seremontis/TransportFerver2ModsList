@@ -21,12 +21,12 @@
         </Grid.ColumnDefinitions>
         <Image Source="tf2bg.jpg" Aspect="AspectFill" HorizontalOptions="FillAndExpand" 
              VerticalOptions="FillAndExpand"  Grid.ColumnSpan="2" Grid.RowSpan="7" Opacity="0.5"/>
-        <Label Style="{StaticResource TitleLabel}" Grid.Row="0" VerticalOptions="End" FontSize="40">
+        <Label Style="{StaticResource TitleLabel}" Grid.Row="0" VerticalOptions="End" FontSize="35">
             Transport Fever 2
         </Label>
-        <Label Style="{StaticResource TitleLabel}" Grid.Row="1" VerticalOptions="Start" FontSize="30">mods list manager</Label>
+        <Label Style="{StaticResource TitleLabel}" Grid.Row="1" VerticalOptions="Start" FontSize="25">mods list manager</Label>
         <ImageButton Source="tf2net.png" Style="{StaticResource MenuButton}" Grid.Row="2" Grid.ColumnSpan="2" Clicked="ShowTF2_Click"/>
         <ImageButton Source="steam2.png" Style="{StaticResource MenuButton}" Grid.Row="3" Grid.ColumnSpan="2"/>
-        <Label Grid.Row="6" Grid.ColumnSpan="2" VerticalTextAlignment="End" TextColor="#590A05" FontFamily="{StaticResource NotableFont}" Text="This is an unofficial application"/>
+        <Label Grid.Row="6" Grid.ColumnSpan="2" VerticalTextAlignment="End" TextColor="#590A05" FontFamily="Arial" Text="This is an unofficial application"/>
     </Grid>
 </ContentPage>

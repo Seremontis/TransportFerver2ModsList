@@ -30,7 +30,7 @@
     <EmbeddedResource Update="Views\ItemDetailTF2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ItemTF2.xaml">
+    <EmbeddedResource Update="Views\ItemsTF2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\MenuTF2.xaml">
@@ -46,5 +46,11 @@
 
   <ItemGroup>
     <Folder Include="Controls\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\ItemsTF2.xaml.cs">
+      <DependentUpon>ItemsTF2.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

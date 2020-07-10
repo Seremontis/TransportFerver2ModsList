@@ -29,7 +29,7 @@ C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\bin\Debug\n
 C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\bin\Debug\netstandard2.1\Mono.Android.xml
 C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\obj\Debug\netstandard2.1\App.xaml.g.cs
 C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\obj\Debug\netstandard2.1\Views\ItemDetailTF2.xaml.g.cs
-C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\obj\Debug\netstandard2.1\Views\ItemTF2.xaml.g.cs
+C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\obj\Debug\netstandard2.1\Views\ItemsTF2.xaml.g.cs
 C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\obj\Debug\netstandard2.1\Views\MainPage.xaml.g.cs
 C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\obj\Debug\netstandard2.1\Views\MenuTF2.xaml.g.cs
 C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\obj\Debug\netstandard2.1\Views\PictureFullScreen.xaml.g.cs
@@ -42,3 +42,4 @@ C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\obj\Debug\n
 C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\obj\Debug\netstandard2.1\TF2ModsList.dll
 C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\obj\Debug\netstandard2.1\ref\TF2ModsList.dll
 C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\obj\Debug\netstandard2.1\TF2ModsList.pdb
+C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\TF2ModsList\obj\Debug\netstandard2.1\TF2ModsList.csprojAssemblyReference.cache

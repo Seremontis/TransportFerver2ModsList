@@ -7,14 +7,11 @@
              x:Class="TF2ModsList.App">
     <Application.Resources>
         <ResourceDictionary>
-            <OnPlatform x:TypeArguments="x:String" x:Key="NotableFont">
-                <On Platform="Android" Value="Notable-Regular.ttf#Regular"/>
-            </OnPlatform>
-            <OnPlatform x:TypeArguments="x:String" x:Key="ModakFont">
-                <On Platform="Android" Value="Modak-Regular.ttf#Regular"/>
+            <OnPlatform x:TypeArguments="x:String" x:Key="LemonadaFont">
+                <On Platform="Android" Value="Lemonada-Bold.ttf#Regular"/>
             </OnPlatform>
             <Style TargetType="Label" x:Key="TitleLabel">
-                <Setter Property="FontFamily" Value="Arial"/>
+                <Setter Property="FontFamily" Value="{StaticResource LemonadaFont}}"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="Grid.ColumnSpan" Value="2"/>
                 <Setter Property="TextColor" Value="#31363B"/>

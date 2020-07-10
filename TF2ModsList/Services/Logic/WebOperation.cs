@@ -6,6 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using TF2ModsList.Models;
+using TF2ModsList.Services.Interface;
 
 namespace TF2ModsList.Services
 {
@@ -19,16 +20,16 @@ namespace TF2ModsList.Services
             this.operationData = operationData;
         }
 
-        public HtmlDocument ReadWeb(string uri = null)
+        public async Task<HtmlDocument> ReadWeb(string uri = null)
         {
-            return ReadPage(uri ?? uriStart);
+            return await Task.Run(()=> ReadPage(uri ?? uriStart));
         }
 
-        private HtmlDocument ReadPage(string uri)
+        public async Task<HtmlDocument> ReadPage(string uri)
         {
             string codePage = string.Empty;
             var webRequest = PrepareHtmlRequest(uri);
-            using (var response = (HttpWebResponse) webRequest.GetResponse())
+            using (var response = (HttpWebResponse) await webRequest.GetResponseAsync())
             {
                 codePage = new StreamReader(response.GetResponseStream()).ReadToEnd();
                 Singleton.Instance.HistoryUri.Add(response.ResponseUri.ToString());
@@ -36,7 +37,7 @@ namespace TF2ModsList.Services
                 operationData.LoadHtml(codePage);
             };
             if (operationData.CheckAcceptTerms())
-                return ReadPage(Singleton.Instance.HistoryUri[Singleton.Instance.HistoryUri.Count-1]);
+                return await ReadWeb(Singleton.Instance.HistoryUri[Singleton.Instance.HistoryUri.Count-1]);
             else
                 return operationData.Html;
         }

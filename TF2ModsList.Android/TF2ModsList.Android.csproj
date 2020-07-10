@@ -83,8 +83,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\Notable-Regular.ttf" />
-    <AndroidAsset Include="Assets\Modak-Regular.ttf" />
+    <AndroidAsset Include="Assets\Lemonada-Bold.ttf" />
+    <AndroidAsset Include="Assets\Lemonada-Light.ttf" />
+    <AndroidAsset Include="Assets\Lemonada-Medium.ttf" />
+    <AndroidAsset Include="Assets\Lemonada-Regular.ttf" />
+    <AndroidAsset Include="Assets\Lemonada-SemiBold.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />

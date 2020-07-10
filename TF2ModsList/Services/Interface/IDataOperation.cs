@@ -6,16 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using TF2ModsList.Models;
 
-namespace TF2ModsList.Services
+namespace TF2ModsList.Services.Interface
 {
     public interface IDataOperation
     {
         HtmlDocument Html { get; set; }
         void LoadHtml(string responseString);
         bool CheckAcceptTerms();
-        byte[] PreparePostData();
-        ObservableCollection<TF2ItemMenu> ReturnMainMenuTF2();
-        ObservableCollection<Mod> ReturnModsItem();
-        DetailMod ReturnDetailModTF2();
+        byte[] PreparePostData(); 
     }
 }
