@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="TF2ModsList.Views.ItemDetailTF2"
-             NavigationPage.HasNavigationBar="False" Style="{StaticResource BgContent}">
+             NavigationPage.HasNavigationBar="False" Style="{StaticResource BgContent}" BindingContext="{Binding DetailItem}">
     <ContentPage.Content>
         <Grid x:Name="MainGrid">
             <Grid.RowDefinitions>
@@ -13,7 +13,7 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <Label Grid.Row="0" Text="Loading..." IsVisible="{Binding IsVisibleNegation}"/>
-            <ScrollView Grid.Row="0" IsVisible="{Binding IsVisible}">
+            <ScrollView x:Name="Scroll" Grid.Row="0" IsVisible="{Binding IsVisible}">
                 <StackLayout x:Name="StackLyt">
                     <Label FontSize="Title" Text="{Binding DetailItem.Title}" Margin="0,15,0,0"/>
                     <BoxView HeightRequest="1" BackgroundColor="Black"/>
@@ -29,7 +29,7 @@
                     <Grid Style="{StaticResource GridTitle}">
                         <BoxView BackgroundColor="Silver" HeightRequest="2" Grid.ColumnSpan="2"/>
                     </Grid>
-                    <Label Text="{Binding DetailItem.ReturnAuthors}"/>
+                    <Label TextType="Html" Text="{Binding DetailItem.ReturnAuthors}"/>
 
                     <Label FontSize="Subtitle">Specyfication</Label>
                     <Grid Style="{StaticResource GridTitle}">

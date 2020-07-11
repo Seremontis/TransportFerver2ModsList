@@ -17,8 +17,8 @@ namespace TF2ModsList.Views
         public ItemDetailTF2(Mod item)
         {
             InitializeComponent();
-            Task.Run(() => this.BindingContext = App.IocContainer.GetInstance<DetailModTF2ViewModel>().ExecuteData(item))
-                .ContinueWith(async (t1) => await ReturnImageToGrid());                   
+            this.BindingContext = App.IocContainer.GetInstance<DetailModTF2ViewModel>().ExecuteData(item);
+            ReturnImageToGrid();
         }
 
         private void ShowHideGallery_Clicked(object sender, EventArgs e)
@@ -26,7 +26,7 @@ namespace TF2ModsList.Views
             Button button = (Button)sender;
             GridImage.IsVisible = !GridImage.IsVisible;
             string value = GetString(button);
- 
+
         }
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace TF2ModsList.Views
 
         private string GetString(Button button)
         {
-            if(button.Text=="Show gallery")
+            if (button.Text == "Show gallery")
             {
                 string value = "Hide gallery";
                 button.Text = value;
@@ -52,7 +52,7 @@ namespace TF2ModsList.Views
             }
         }
 
-        private async Task ReturnImageToGrid()
+        public void ReturnImageToGrid()
         {
             var context = (DetailModTF2ViewModel)BindingContext;
             var listImage = context.DetailItem.ListPictures;
@@ -72,7 +72,7 @@ namespace TF2ModsList.Views
                 for (int i = 0; i < listImage.Count; i++)
                     GridImage.Children.Add(LoadImage(listImage[i], i % maxElementInRow, i / maxElementInRow));
                 GridImage.MinimumHeightRequest = 100;
-            }         
+            }
         }
 
         private void AddColumn(int maxCol)
@@ -95,13 +95,13 @@ namespace TF2ModsList.Views
             }
         }
 
-        private Image LoadImage(Uri uri,int columnNumber,int rowNumber)
+        private Image LoadImage(Uri uri, int columnNumber, int rowNumber)
         {
             Image image = new Image()
             {
                 Source = uri,
-                Aspect=Aspect.AspectFill,
-            };           
+                Aspect = Aspect.AspectFill,
+            };
             var tapped = new TapGestureRecognizer();
             tapped.Tapped += (sender, e) =>
             {
@@ -113,6 +113,6 @@ namespace TF2ModsList.Views
             return image;
         }
 
-       
+
     }
 }

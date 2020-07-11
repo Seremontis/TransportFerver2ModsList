@@ -12,6 +12,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="1"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -19,8 +20,10 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="35" Text="{Binding NameCategory}}"/>
+                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="35" Text="{Binding NameCategory}"/>
                 <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="#999" HeightRequest="1" WidthRequest="50" />
+                <Button Text="&lt;" IsEnabled="{Binding PreviousPageBool}" Grid.Row="2" Grid.Column="0" Clicked="Previous_Clicked"/>
+                <Button Text="&gt;" IsEnabled="{Binding NextPageBool}" Grid.Row="2" Grid.Column="3" Clicked="Next_Clicked"/>
             </Grid>
             <Label Text="Loading..." IsVisible="{Binding IsVisibleNegation}"/>
             <ListView ItemsSource="{Binding ListItems}" IsVisible="{Binding IsVisible}"

@@ -1,4 +1,5 @@
 ﻿using HtmlAgilityPack;
+using Java.Text;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -19,6 +20,8 @@ namespace TF2ModsList.ViewModel
         #region fields
         private ObservableCollection<Mod> _ListItems;
         private string _NameCategory;
+        private string _PreviousPage;
+        private string _NextPage;
 
         private IWebOperation _webOperation;
         private ITF2ListItemOperation _tf2Operation;
@@ -37,6 +40,25 @@ namespace TF2ModsList.ViewModel
         {
             get { return _NameCategory; }
         }
+
+        public string PreviousPage
+        {
+            get { return _PreviousPage; }
+            set { _PreviousPage = value;
+                NotifyPropertyChanged("PreviousPageBool");
+            }
+        }
+        public string NextPage
+        {
+            get { return _NextPage; }
+            set { _NextPage = value;
+                NotifyPropertyChanged("NextPageBool");
+            }
+        }
+
+
+        public bool PreviousPageBool{ get {return  !string.IsNullOrEmpty(PreviousPage); } }
+        public bool NextPageBool{ get {return  !string.IsNullOrEmpty(NextPage); } }
         #endregion
 
         #region methods
@@ -49,13 +71,16 @@ namespace TF2ModsList.ViewModel
         public ItemsTF2ViewModel ExecuteData(TF2ItemMenu itemMenu)
         {
             _NameCategory = itemMenu.NameItem;
+            IsVisible = false;
             Task.Run(async () => _tf2Operation.Html = await _webOperation.ReadWeb(itemMenu.Path))
                 .ContinueWith((t1) =>
                 {
                     ListItems = _tf2Operation.ReturnModsItem();
+                    var infoPage = _tf2Operation.ReturnAccesPage();
+                    PreviousPage = infoPage.Item1;
+                    NextPage = infoPage.Item2;
                     IsVisible = true;
                 });
-
             return this;
         }
         #endregion

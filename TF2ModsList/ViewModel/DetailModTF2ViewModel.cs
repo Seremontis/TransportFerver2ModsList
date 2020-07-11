@@ -9,16 +9,13 @@ using TF2ModsList.Models;
 using TF2ModsList.Services;
 using TF2ModsList.Services.Interface;
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 
 namespace TF2ModsList.ViewModel
 {
-
-    /// <summary>
-    /// repair gallery
-    /// </summary>
     public class DetailModTF2ViewModel : BaseViewModel
     {
-       
+
         #region fields
         private DetailMod _DetailItem;
         private string _UriSource;
@@ -58,11 +55,11 @@ namespace TF2ModsList.ViewModel
             {
                 _UriSource = itemMenu.UriPage.ToString();
                 _tf2DetailOperation.Html = await _webOperation.ReadWeb(UriSource);
-
-            }).ContinueWith((t1) => {
+            }).ContinueWith((t1) =>
+            {
                 DetailItem = _tf2DetailOperation.ReturnDetailModTF2();
                 IsVisible = true;
-            });
+            }).Wait();
             return this;
         }
 

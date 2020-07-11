@@ -10,5 +10,7 @@ namespace TF2ModsList.Services.Interface
     public interface ITF2ListItemOperation:IDataOperation
     {
         ObservableCollection<Mod> ReturnModsItem();
+
+        Tuple<string, string> ReturnAccesPage();
     }
 }
