@@ -27,19 +27,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\ItemDetailTF2.xaml">
+    <EmbeddedResource Update="Views\Steam\SteamCategory.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\ItemsTF2.xaml">
+    <EmbeddedResource Update="Views\TF2Community\ItemDetailTF2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\MenuTF2.xaml">
+    <EmbeddedResource Update="Views\TF2Community\ItemsTF2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\TF2Community\MenuTF2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\PictureFullScreen.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\SubMenuTF2.xaml">
+    <EmbeddedResource Update="Views\TF2Community\SubMenuTF2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -49,7 +52,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\ItemsTF2.xaml.cs">
+    <Compile Update="Views\TF2Community\ItemsTF2.xaml.cs">
       <DependentUpon>ItemsTF2.xaml</DependentUpon>
     </Compile>
   </ItemGroup>

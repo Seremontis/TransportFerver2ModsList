@@ -14,14 +14,15 @@ namespace TF2ModsList.Services
     {
         private readonly string uriStart = @"https://www.transportfever.net/filebase/index.php?filebase/80-transport-fever-2/";
         private IDataOperation operationData;
-
+        private EnumWebsite _enumWebsite;
         public WebOperation(IDataOperation operationData)
         {
             this.operationData = operationData;
         }
 
-        public async Task<HtmlDocument> ReadWeb(string uri = null)
+        public async Task<HtmlDocument> ReadWeb(string uri = null,EnumWebsite enumWebsite=EnumWebsite.TF2Community)
         {
+            this._enumWebsite = enumWebsite;
             return await Task.Run(()=> ReadPage(uri ?? uriStart));
         }
 
@@ -36,8 +37,13 @@ namespace TF2ModsList.Services
                 Singleton.Instance.Cookies = response.Cookies;
                 operationData.LoadHtml(codePage);
             };
-            if (operationData.CheckAcceptTerms())
-                return await ReadWeb(Singleton.Instance.HistoryUri[Singleton.Instance.HistoryUri.Count-1]);
+            if (_enumWebsite == 0)
+            {
+                 if (operationData.CheckAcceptTerms())
+                     return await ReadWeb(Singleton.Instance.HistoryUri[Singleton.Instance.HistoryUri.Count - 1]);
+                 else
+                    return operationData.Html;
+            }
             else
                 return operationData.Html;
         }
@@ -45,23 +51,28 @@ namespace TF2ModsList.Services
         private HttpWebRequest PrepareHtmlRequest(string uri)
         {
             HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(uri);
-            webRequest.AllowAutoRedirect = false;
-            webRequest.Method = "POST";
-            webRequest.ContentType = "application/x-www-form-urlencoded";
-            WebHeaderCollection myWebHeaderCollection = webRequest.Headers;
-            myWebHeaderCollection.Add("Accept-Language", "en;q=0.8");
-            if (operationData.Html != null)
+            if (_enumWebsite == 0)
             {
-                var data = operationData.PreparePostData();
-                webRequest.ContentLength = data.Length;
-                using (var stream = webRequest.GetRequestStream())
+                webRequest.AllowAutoRedirect = false;
+                webRequest.Method = "POST";
+                webRequest.ContentType = "application/x-www-form-urlencoded";
+                WebHeaderCollection myWebHeaderCollection = webRequest.Headers;
+                myWebHeaderCollection.Add("Accept-Language", "en;q=0.8");
+                if (operationData.Html != null)
                 {
-                    stream.Write(data, 0, data.Length);
+                    var data = operationData.PreparePostData();
+                    webRequest.ContentLength = data.Length;
+                    using (var stream = webRequest.GetRequestStream())
+                    {
+                        stream.Write(data, 0, data.Length);
+                    }
                 }
+                webRequest.CookieContainer = new CookieContainer();
+                if (Singleton.Instance.Cookies.Count > 0)
+                    webRequest.CookieContainer.Add(Singleton.Instance.Cookies);
             }
-            webRequest.CookieContainer = new CookieContainer();
-            if (Singleton.Instance.Cookies.Count>0)
-                webRequest.CookieContainer.Add(Singleton.Instance.Cookies);
+            else
+                webRequest.ContentLength = 0;
             return webRequest;
         }
     }

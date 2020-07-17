@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="TF2ModsList.MainPage"
              NavigationPage.HasNavigationBar="False" Style="{StaticResource BgContent}">
-<!--Czcionka do poprawy-->
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -26,7 +26,7 @@
         </Label>
         <Label Style="{StaticResource TitleLabel}" Grid.Row="1" VerticalOptions="Start" FontSize="25">mods list manager</Label>
         <ImageButton Source="tf2net.png" Style="{StaticResource MenuButton}" Grid.Row="2" Grid.ColumnSpan="2" Clicked="ShowTF2_Click"/>
-        <ImageButton Source="steam2.png" Style="{StaticResource MenuButton}" Grid.Row="3" Grid.ColumnSpan="2"/>
+        <ImageButton Source="steam2.png" Style="{StaticResource MenuButton}" Grid.Row="3" Grid.ColumnSpan="2" Clicked="ShowSteam_Clicked"/>
         <Label Grid.Row="6" Grid.ColumnSpan="2" VerticalTextAlignment="End" TextColor="#590A05" FontFamily="Arial" Text="This is an unofficial application"/>
     </Grid>
 </ContentPage>

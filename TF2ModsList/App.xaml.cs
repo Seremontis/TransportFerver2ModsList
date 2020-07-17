@@ -26,9 +26,11 @@ namespace TF2ModsList
             IocContainer.Register<ITF2MenuOperation, TF2MenuOperation>(Lifestyle.Transient);
             IocContainer.Register<ITF2ListItemOperation, TF2ListItemOperation>(Lifestyle.Transient);
             IocContainer.Register<ITF2DetailModOperation, TF2DetailModOperation>(Lifestyle.Transient);
+            IocContainer.Register<ISteamCategoryOperation, SteamCategoryOperation>(Lifestyle.Transient);
             IocContainer.Register<MenuTF2ViewModel>();
             IocContainer.Register<ItemsTF2ViewModel>();
             IocContainer.Register<DetailModTF2ViewModel>();
+            IocContainer.Register<SteamCategoryViewModel>();
 
 
             IocContainer.Verify();
