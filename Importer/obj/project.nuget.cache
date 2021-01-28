@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "a7IT6ChFSKPt7rMnb6YTSe4A5T+IBSxRObp/JJ0VK/uALg1SeFyZNY7QZ0h5oTdilp+5tBDsy5FJjlGhwKPsIQ==",
+  "dgSpecHash": "/hLQd6DeiIvUPIhEjfOlUeG2xBkZG/L0lOjjeHB2iD15bGqUCOSUSsCE+rCrnV2mN9Lhc69DujxYGHFKYpDufA==",
   "success": true,
   "projectFilePath": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\Importer\\Importer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\komp2\\.nuget\\packages\\htmlagilitypack\\1.11.30\\htmlagilitypack.1.11.30.nupkg.sha512"
+    "C:\\Users\\komp2\\.nuget\\packages\\htmlagilitypack\\1.11.30\\htmlagilitypack.1.11.30.nupkg.sha512",
+    "C:\\Users\\komp2\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\komp2\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\komp2\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

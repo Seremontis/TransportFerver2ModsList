@@ -12,16 +12,10 @@ namespace Importer
     {
         private HttpWebRequest webRequest;
         private readonly string uriStart = @"https://www.transportfever.net/filebase/index.php?filebase/80-transport-fever-2/";
-        private readonly string defaultPath = "html/body/div[@id='pageContainer']/section[@id='main']/div/div";
-        private CookieContainer cookie;
-        protected Dictionary<string, string> Pairs = new Dictionary<string, string>();
-        public WebsiteLoader()
-        {         
-            //SetCookies();
-        }
+        private readonly string englishUri = "&l=2";
         public HtmlDocument GetHtml(string uri=null)
         {
-            PrepareRequest(uri == null ? uriStart : uri);
+            PrepareRequest(uri == null ? uriStart : uri+englishUri);
             HtmlDocument htmlDocument = new HtmlDocument();
             using (var response = (HttpWebResponse)webRequest.GetResponse())
             {
@@ -51,7 +45,7 @@ namespace Importer
             webRequest.ContentType = "application/x-www-form-urlencoded";
             WebHeaderCollection myWebHeaderCollection = webRequest.Headers;
             myWebHeaderCollection.Add("Accept-Language", "en;q=0.8");
-            webRequest.CookieContainer = cookie != null ? cookie : null;
+            webRequest.CookieContainer = null;
             webRequest.ContentLength = 0;                  
         }             
     }

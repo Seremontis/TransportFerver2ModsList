@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HtmlAgilityPack;
+using System;
 
 namespace Importer
 {
@@ -8,7 +9,9 @@ namespace Importer
         {
             Console.WriteLine("Hello World!");
             WebsiteLoader websiteLoader = new WebsiteLoader();
-            websiteLoader.GetHtml("https://www.transportfever.net/filebase/index.php?filebase/162-transportmittel/");
+            WebsiteManipulation websiteManipulation = new WebsiteManipulation();
+            HtmlDocument doc=websiteLoader.GetHtml();
+            websiteManipulation.GetUris(doc);
         }
     }
 }

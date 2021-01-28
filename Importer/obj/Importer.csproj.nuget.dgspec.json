@@ -46,6 +46,10 @@
             "HtmlAgilityPack": {
               "target": "Package",
               "version": "[1.11.30, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [
