@@ -1,0 +1,4 @@
+C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\ImpoterTestProject\obj\Debug\netcoreapp3.1\ImpoterTestProject.csprojAssemblyReference.cache
+C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\ImpoterTestProject\obj\Debug\netcoreapp3.1\ImpoterTestProject.AssemblyInfoInputs.cache
+C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\ImpoterTestProject\obj\Debug\netcoreapp3.1\ImpoterTestProject.AssemblyInfo.cs
+C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\ImpoterTestProject\obj\Debug\netcoreapp3.1\ImpoterTestProject.csproj.CoreCompileInputs.cache

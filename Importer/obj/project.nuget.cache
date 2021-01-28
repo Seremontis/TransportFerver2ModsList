@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "a7IT6ChFSKPt7rMnb6YTSe4A5T+IBSxRObp/JJ0VK/uALg1SeFyZNY7QZ0h5oTdilp+5tBDsy5FJjlGhwKPsIQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\komp2\\Documents\\GitHub\\TransportFerver2ModsList\\Importer\\Importer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\komp2\\.nuget\\packages\\htmlagilitypack\\1.11.30\\htmlagilitypack.1.11.30.nupkg.sha512"
+  ],
+  "logs": []
+}
