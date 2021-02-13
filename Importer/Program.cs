@@ -1,17 +1,17 @@
 ﻿using HtmlAgilityPack;
 using System;
+using System.Threading.Tasks;
 
 namespace Importer
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            WebsiteLoader websiteLoader = new WebsiteLoader();
-            WebsiteManipulation websiteManipulation = new WebsiteManipulation();
-            HtmlDocument doc=websiteLoader.GetHtml();
-            websiteManipulation.GetUris(doc);
+            BuilderData builderData = new BuilderData(new WebsiteLoader(), new WebsiteManipulation());
+            await builderData.CreateJson();
+            Console.WriteLine("Import Complete");
         }
     }
 }
