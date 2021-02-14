@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Importer
 {
-    public class WebsiteManipulation : IWebsiteManipulation
+    public class WebsiteManipulationTF2Net : IWebsiteManipulation
     {
         public List<Website> GetUrisCategory(HtmlDocument htmlDocumet)
         {
@@ -38,15 +38,18 @@ namespace Importer
                 {
                     Category = category,
                     Title = item.SelectSingleNode(@".//h3/a")?.InnerText,
-                    Author = item.SelectSingleNode(@".//small/a[@class='userLink']")?.InnerText,
-                    Image = new Uri(item.SelectSingleNode(@".//img").Attributes["src"].Value),
                     WebsiteSource = new Uri(item.SelectSingleNode(@".//h3/a").Attributes["href"].Value),
+                    Id = int.Parse(item.SelectSingleNode(@".//h3/a").Attributes["data-entry-id"].Value),
+                    Image = new Uri(item.SelectSingleNode(@".//img").Attributes["src"].Value),
+                    Author = item.SelectSingleNode(@".//small/a[@class='userLink']")?.InnerText,
+                    NameWebsite=EnumWebsite.transportfeverNet,
+                    StateFile=EnumStateFile.New
                 };
                 HtmlNodeCollection times = item.SelectNodes(@".//small/time");
                 if (times.Count > 1)
                 {
                     modItem.CreateData = DateTime.Parse(times[0].Attributes["datetime"].Value);
-                    modItem.UpdateData = DateTime.Parse(times[0].Attributes["datetime"].Value);
+                    modItem.UpdateData = DateTime.Parse(times[1].Attributes["datetime"].Value);
                 }
                 else
                     modItem.CreateData = DateTime.Parse(times[0].Attributes["datetime"].Value);
