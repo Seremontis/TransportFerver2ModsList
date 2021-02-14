@@ -16,3 +16,5 @@ C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\Importer\obj\Debug\net5
 C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\Importer\obj\Debug\net5.0\ref\Importer.dll
 C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\Importer\obj\Debug\net5.0\Importer.pdb
 C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\Importer\obj\Debug\net5.0\Importer.genruntimeconfig.cache
+C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\komp2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Utf8Json.dll

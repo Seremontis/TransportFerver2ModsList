@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Importer
 {
-    public interface IWebsiteLoader
+    public interface IDataLoader
     {
         public Task<HtmlDocument> GetHtml(Uri uri=null);
-        public HtmlDocument GetHtml(Uri uri, bool flagOverride);
+        public Task<List<ModItem>> GetFile(string path);
     }
 }

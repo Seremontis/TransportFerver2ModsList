@@ -1,5 +1,7 @@
 ﻿using HtmlAgilityPack;
+using System.Text.Json;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -8,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Importer
 {
-    public class WebsiteLoader : IWebsiteLoader
+    public class DataLoader : IDataLoader
     {
         private HttpWebRequest webRequest;
         private readonly Uri uriStart = new Uri(@"https://www.transportfever.net/filebase/index.php?filebase/80-transport-fever-2/");
@@ -28,17 +30,10 @@ namespace Importer
 
             return htmlDocument;
         }
-        public HtmlDocument GetHtml(Uri uri, bool flagOverride)
+        public async Task<List<ModItem>> GetFile(string path)
         {
-            if (flagOverride)
-            {
-
-            }
-            else
-            {
-
-            }
-            return null;
+            string text = await File.ReadAllTextAsync(path);
+            return JsonSerializer.Deserialize<List<ModItem>>(text);
         }
 
         private void PrepareRequest(Uri uri)
