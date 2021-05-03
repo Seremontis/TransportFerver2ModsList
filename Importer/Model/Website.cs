@@ -10,5 +10,6 @@ namespace Importer.Model
     {
         public Uri UriPage { get; set; }
         public string Category{ get; set; }
+        public string ParentCategory{ get; set; }
     }
 }

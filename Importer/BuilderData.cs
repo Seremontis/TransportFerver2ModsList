@@ -12,11 +12,11 @@ namespace Importer
 {
     public class BuilderData
     {
+        private static NLog.Logger _logger = NLog.LogManager.GetCurrentClassLogger();
         private IDataLoader dataLoader;
         private IWebsiteManipulation websiteManipulation;
-        private string path;
-        public List<ModItem> NewModItems = new List<ModItem>();
-        public List<ModItem> OldModItems = new List<ModItem>();
+        public JsonModsFile NewModItems = new JsonModsFile();
+        public JsonModsFile OldModItems = new JsonModsFile();
         private object locker = new object();
 
         public BuilderData(IDataLoader websiteLoader, IWebsiteManipulation websiteManipulation)
@@ -24,49 +24,58 @@ namespace Importer
             this.dataLoader = websiteLoader;
             this.websiteManipulation = websiteManipulation;
         }
+
         public async Task CreateJson(string localPath = null, bool update = false)
         {
             if (string.IsNullOrEmpty(localPath))
                 localPath = Directory.GetCurrentDirectory() + $"\\ListMods_{DateTime.Now.ToString("dd-MM-yyyy")}.json";
+            else
+                localPath += $"\\ListMods_{DateTime.Now.ToString("dd-MM-yyyy")}.json";
+            await PrepareDataBeforeSave(localPath, update);
+            string json = JsonSerializer.Serialize(NewModItems);
+            File.WriteAllText(localPath, json);
+            _logger.Info("Save file complete");
+        }
+
+        private async Task PrepareDataBeforeSave(string localPath, bool update)
+        {
             HtmlDocument page = dataLoader.GetHtml().Result;
             List<Website> uris = websiteManipulation.GetUrisCategory(page);
+            AddSchemaCategoryToModsList(uris);
             List<Task> tasks = new List<Task>();
-            foreach (Website uri in uris)
+            foreach (Website uri in uris)        
                 tasks.Add(PrepareFromFirstSubPage(uri));
             if (update)
                 tasks.Add(GetDataWithFile(localPath));
-            try
-            {
-                await Task.WhenAll(tasks);
-                if (update)
-                    CompareFile();
-                string json = JsonSerializer.Serialize(NewModItems);
-                File.WriteAllText(localPath, json);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+            await Task.WhenAll(tasks);
+            if (update)
+                CompareFile();
         }
 
-        public void CompareFile()
+        private void CompareFile()
         {
-            foreach (ModItem item in NewModItems)
+            foreach (Mod item in NewModItems.Mods)
             {
-                ModItem itemOld = OldModItems.Where(x => x.Id == item.Id).FirstOrDefault();
+                Mod itemOld = OldModItems.Mods.Where(x => x.Id == item.Id).FirstOrDefault();
                 if (itemOld != null)
                 {
                     if (GetEqualProperty(itemOld, item))
                         item.StateFile = EnumStateFile.Old;
                     else
                         item.StateFile = EnumStateFile.Update;
-                }         
+                }
             }
         }
 
-        private bool GetEqualProperty(ModItem item1, ModItem item2)
+        private void AddSchemaCategoryToModsList(List<Website> urisAndCategoryName)
         {
-            foreach (var propertyInfo in item1.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance))
+            foreach (Website item in urisAndCategoryName)
+                NewModItems.CategoriesMap.Add(new SchemaCategory() { ChildElement = item.Category, ParentElement = item.ParentCategory });
+        }
+
+        private bool GetEqualProperty(Mod item1, Mod item2)
+        {
+            foreach (PropertyInfo propertyInfo in item1.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance))
                 if (!propertyInfo.GetValue(item1).Equals(propertyInfo.GetValue(item2)))
                     return false;
             return true;
@@ -74,7 +83,7 @@ namespace Importer
 
         private async Task GetDataWithFile(string path)
         {
-            OldModItems = await dataLoader.GetFile(path);
+            OldModItems.Mods = await dataLoader.GetFile(path);
         }
 
         private async Task PrepareFromFirstSubPage(Website uri)
@@ -94,11 +103,12 @@ namespace Importer
             await LoadItems(category, html: page);
             return uriSub;
         }
+
         private async Task LoadItems(string category, Uri uri = null, HtmlDocument html = null)
         {
             HtmlDocument page = html != null ? html : await dataLoader.GetHtml(uri);
             lock (locker)
-                NewModItems.AddRange(websiteManipulation.SearchItems(category, page));
+                NewModItems.Mods.AddRange(websiteManipulation.SearchItems(category, page));
         }
 
     }

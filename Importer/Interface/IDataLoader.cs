@@ -9,6 +9,6 @@ namespace Importer
     public interface IDataLoader
     {
         public Task<HtmlDocument> GetHtml(Uri uri=null);
-        public Task<List<ModItem>> GetFile(string path);
+        public Task<List<Mod>> GetFile(string path);
     }
 }

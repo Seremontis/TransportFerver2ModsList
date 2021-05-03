@@ -15,7 +15,6 @@ namespace Importer
         private HttpWebRequest webRequest;
         private readonly Uri uriStart = new Uri(@"https://www.transportfever.net/filebase/index.php?filebase/80-transport-fever-2/");
         private CookieContainer cookies;
-        private readonly string englishUri = "&l=2";
         public async Task<HtmlDocument> GetHtml(Uri uri = null)
         {
             HtmlDocument htmlDocument = new HtmlDocument();
@@ -30,10 +29,10 @@ namespace Importer
 
             return htmlDocument;
         }
-        public async Task<List<ModItem>> GetFile(string path)
+        public async Task<List<Mod>> GetFile(string path)
         {
             string text = await File.ReadAllTextAsync(path);
-            return JsonSerializer.Deserialize<List<ModItem>>(text);
+            return JsonSerializer.Deserialize<List<Mod>>(text);
         }
 
         private void PrepareRequest(Uri uri)
