@@ -13,7 +13,7 @@ namespace Importer
             List<Website> pairs = new List<Website>();
             foreach (HtmlNode node in nodes)
                 foreach (HtmlNode item in node.SelectNodes(".//a"))
-                    pairs.Add(new Website() { Category = item.InnerText, UriPage = new Uri(item.Attributes["href"].Value) });
+                    pairs.Add(new Website() {ParentCategory=node.ParentNode.ChildNodes.FindFirst("div").InnerText.Trim() ,Category = item.InnerText, UriPage = new Uri(item.Attributes["href"].Value) });
             return pairs;
         }
         public List<Uri> GetPageList(HtmlDocument htmlDocument)
@@ -27,14 +27,14 @@ namespace Importer
                             pairs.Add(new Uri(item.Attributes["href"].Value.Replace("&amp;", "&")));
             return pairs;
         }
-        public List<ModItem> SearchItems(string category, HtmlDocument htmlDocument)
+        public List<Mod> SearchItems(string category, HtmlDocument htmlDocument)
         {
             HtmlNode doc = htmlDocument.DocumentNode;
-            List<ModItem> mods = new List<ModItem>();
+            List<Mod> mods = new List<Mod>();
             foreach (HtmlNode item in doc.SelectNodes(@"//table[@class='table']/tbody/tr"))
             {
 
-                ModItem modItem = new ModItem()
+                Mod modItem = new Mod()
                 {
                     Category = category,
                     Title = item.SelectSingleNode(@".//h3/a")?.InnerText,
@@ -53,6 +53,23 @@ namespace Importer
                 }
                 else
                     modItem.CreateData = DateTime.Parse(times[0].Attributes["datetime"].Value);
+                mods.Add(modItem);
+            };
+
+            return mods;
+        }
+        public List<SchemaCategory> CreateStrucuteCategory(HtmlDocument htmlDocument)
+        {
+            HtmlNode doc = htmlDocument.DocumentNode;
+            List<SchemaCategory> mods = new List<SchemaCategory>();
+            foreach (HtmlNode item in doc.SelectNodes(@"//table[@class='table']/tbody/tr"))
+            {
+
+                SchemaCategory modItem = new SchemaCategory()
+                {
+                    ParentElement = null,
+                    ChildElement = null,
+                };
                 mods.Add(modItem);
             };
 
