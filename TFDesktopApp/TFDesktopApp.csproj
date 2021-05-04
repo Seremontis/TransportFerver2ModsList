@@ -17,6 +17,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Linq" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Importer\Importer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="logo_transport_fever_2_neg.png" />
     <Resource Include="pexels.jpg" />
     <Resource Include="steam-logo-transparent.png" />

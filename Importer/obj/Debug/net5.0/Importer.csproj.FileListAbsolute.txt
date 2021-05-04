@@ -28,9 +28,15 @@ C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\
 C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\ref\Importer.dll
 C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Importer.pdb
 C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\HtmlAgilityPack.dll
+C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.Configuration.dll
 C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Json.dll
 C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
 C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
@@ -60,9 +66,3 @@ C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\obj\Debug\net5.0\
 C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\obj\Debug\net5.0\ref\Importer.dll
 C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\obj\Debug\net5.0\Importer.pdb
 C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\obj\Debug\net5.0\Importer.genruntimeconfig.cache
-C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.Configuration.dll
-C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.Configuration.FileExtensions.dll
-C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Json.dll
-C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Abstractions.dll
-C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Physical.dll
-C:\Users\K2\Documents\GitHub\TransportFerver2ModsList\Importer\bin\Debug\net5.0\Microsoft.Extensions.FileSystemGlobbing.dll

@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Importer", "Importer\Importer.csproj", "{A39FECD7-E7FD-4891-9AE0-5125CAFD47A6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TFDesktopApp", "TFDesktopApp\TFDesktopApp.csproj", "{C0C5971D-00B6-4636-BA3B-997ED87E2B7A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A39FECD7-E7FD-4891-9AE0-5125CAFD47A6} = {A39FECD7-E7FD-4891-9AE0-5125CAFD47A6}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

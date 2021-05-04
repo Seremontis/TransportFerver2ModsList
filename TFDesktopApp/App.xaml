@@ -13,5 +13,25 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <Style x:Key="categoryCheckBox" 
+               TargetType="{x:Type CheckBox}">
+            <Setter Property="Margin" Value="15 5 0 0"/>
+            <Setter Property="Foreground" Value="white"/>
+            <Setter Property="LayoutTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="1.2" ScaleY="1.2" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="subcategoryCheckBox" 
+               TargetType="{x:Type CheckBox}">
+            <Setter Property="Margin" Value="35 5 0 0"/>
+            <Setter Property="Foreground" Value="white"/>
+            <Setter Property="LayoutTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="1.2" ScaleY="1.2" />
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>
