@@ -1,0 +1,109 @@
+hr{
+    background: #ECDBBA;
+}
+
+.card{
+    background: #C84B31;
+    transition:  background-color 1s;
+}
+
+.card:hover{
+    background: #807b38!important;
+
+}
+
+.card-title{
+    text-decoration: underline;
+    min-height: 50px;
+    
+}
+
+.card-link{
+    color: whitesmoke;
+    text-decoration: underline;
+    font-weight: 500;
+    transition:  color 1s;
+}
+
+.card-link:hover{
+    color: yellowgreen;
+}
+
+.fa-elementor{
+    color: green;
+    position: relative;
+}
+
+.list-group-item{
+    background: transparent;
+}
+
+.user:hover{
+    background-color: #C84B31;
+    border-radius: 5px;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerElement{
+    margin: 0 auto;
+}
+
+.icon{
+    color: blue;
+    position: absolute;
+    background-color: rgba(255, 127, 80, 0.7);
+    border-radius: 20px;
+    bottom: 0;
+    right: -5px;
+    padding: 5px;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.customButton{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+}
+
+.searcher{
+    width: 100%;
+    min-height: 100px;
+    background-color: #2D4263;
+}
+
+.menu{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.detailMenu{
+    display: none;
+    position: absolute;
+    padding-top: 5px;
+    background-color: #2D4263;
+    border-radius: 0 0 5px 5px ;
+    border: 2px solid black; 
+    border-top: transparent;
+    z-index: 1;
+}
+
+.menuItem:hover .detailMenu{
+    display: block;
+}
+
+.detailMenu:nth-last-child(1){
+    padding-bottom: 5px;
+}

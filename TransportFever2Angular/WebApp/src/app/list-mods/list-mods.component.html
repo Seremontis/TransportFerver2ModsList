@@ -1,0 +1,84 @@
+<div class="row searcher m-0">
+  <div class="col-10 h-100">
+    <div class="col m-1 mt-2 w-auto">
+      <form class="w-100" #form="ngForm" (ngSubmit)="searchMods(form)">
+        <div class="row">
+          <div class="col-10 m-0 pl-0 pr-0">
+            <input
+              type="text"
+              class="form-control"
+              id="message"
+              placeholder="Wyszukaj element"
+              name="message"
+              ngModel
+            />
+          </div>
+          <div class="col-2 m-0 pl-0">
+            <button class="btn btn-primary" type="submit">Szukaj</button>
+          </div>
+          <div class="row w-100 m-2">
+            <div class="col-3 mb-1 menuItem" *ngFor="let t of getMenu();let i=index">
+                {{ t.ParentElement }}
+              <div class="detailMenu">
+                <div class="col-12 ml-1" *ngFor="let item of t.ChildElements">
+                  {{ item }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="user col-2 mt-1 mb-1">
+    <button class="customButton w-100 h-100" (click)="openModal()">
+      <div>
+        <div class="row h-70">
+          <i class="fab fa-elementor fa-4x centerElement">
+            <span class="icon">{{getCurrentModsCount()}}</span>
+          </i>
+        </div>
+        <div class="row h-30"><p class="centerElement">Witaj /user/</p></div>
+      </div>
+    </button>
+  </div>
+</div>
+
+<div class="m-2">
+  <h1>Dostępne mody</h1>
+  <hr />
+
+  <div class="row card-group ml-1 mr-1" ><!--(window:resize)="onResize($event)"-->
+    <div
+      class="col-3 align-items-stretch" style="display: grid;"
+      *ngFor="let item of mods; let index = index"
+    >
+      <div class="card mb-3 cardbg">
+        <img
+          class="card-img-top"
+          src="{{ item.Image }}"
+          alt="{{ item.Title }}"
+        />
+        <div class="card-body">
+          <h6 class="card-title">{{ item.Title }}</h6>
+          <p class="card-text">
+            {{ item.NameWebsite }}
+          </p>
+        </div>
+        <ul class="list-group list-group-flush ">
+          <li class="list-group-item"><span style="font-weight: 900;">Autor:</span> {{ item.Author }}</li>
+          <li class="list-group-item"><span style="font-weight: 900;">Kategoria:</span> {{ item.Category }}</li>
+          <li class="list-group-item"><span style="font-weight: 900;">Data utworzenia:</span> <br/> {{ item.CreateData }}</li>
+          <li class="list-group-item"><span style="font-weight: 900;">Data aktualizacji:</span> <br/> {{ item.UpdateData }}</li>
+        </ul>
+        <div class="card-body">
+          <a href="{{item.WebsiteSource}}" target="_blank" class="card-link">Źródło</a>
+          <a *ngIf="checkIfAdd(item); else toRemove" (click)="addMod(item)" class="card-link">Dodaj do swojej listy</a>
+          <ng-template #toRemove>
+            <a e (click)="removeMod(item)" class="card-link">Usuń z swojej listy</a>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
