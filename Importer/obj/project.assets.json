@@ -1997,25 +1997,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\K2\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\K2\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\K2\\Documents\\GitHub\\TransportFerver2ModsList\\Importer\\Importer.csproj",
+      "projectUniqueName": "C:\\Users\\K2\\Documents\\Projects\\TransportFerver2ModsList\\Importer\\Importer.csproj",
       "projectName": "Importer",
-      "projectPath": "C:\\Users\\K2\\Documents\\GitHub\\TransportFerver2ModsList\\Importer\\Importer.csproj",
+      "projectPath": "C:\\Users\\K2\\Documents\\Projects\\TransportFerver2ModsList\\Importer\\Importer.csproj",
       "packagesPath": "C:\\Users\\K2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\K2\\Documents\\GitHub\\TransportFerver2ModsList\\Importer\\obj\\",
+      "outputPath": "C:\\Users\\K2\\Documents\\Projects\\TransportFerver2ModsList\\Importer\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
         "C:\\Users\\K2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -2092,7 +2087,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
