@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ebA3zvh70T51VN7SDEmW/G4WfDYtN7ak62hxfE7sggnOh8fggE6pTYfnzvMGFOYUjXND3/FZ9rRLsqmynDAo0Q==",
+  "dgSpecHash": "rJgLJ+Igly8CzeuKiK/plqxqhrkAumHfy/sf95ZGcpFtdqoor8ip4/AyHy2+mfc3hT9doGGSXW7Tw8s1jZrg0g==",
   "success": true,
   "projectFilePath": "C:\\Users\\K2\\Documents\\Projects\\TransportFerver2ModsList\\ImporterSteam\\ImporterSteam\\ImporterSteam.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,7 @@
     "C:\\Users\\K2\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\K2\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\K2\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\K2\\.nuget\\packages\\nlog\\4.7.9\\nlog.4.7.9.nupkg.sha512",
+    "C:\\Users\\K2\\.nuget\\packages\\nlog\\4.7.13\\nlog.4.7.13.nupkg.sha512",
     "C:\\Users\\K2\\.nuget\\packages\\nlog.extensions.logging\\1.7.2\\nlog.extensions.logging.1.7.2.nupkg.sha512",
     "C:\\Users\\K2\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\K2\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

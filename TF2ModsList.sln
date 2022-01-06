@@ -5,11 +5,6 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Importer", "Importer\Importer.csproj", "{A39FECD7-E7FD-4891-9AE0-5125CAFD47A6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImporterSteam", "ImporterSteam\ImporterSteam\ImporterSteam.csproj", "{3057D234-DA0D-41D2-A77C-531348CAF336}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A39FECD7-E7FD-4891-9AE0-5125CAFD47A6} = {A39FECD7-E7FD-4891-9AE0-5125CAFD47A6}
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,10 +15,6 @@ Global
 		{A39FECD7-E7FD-4891-9AE0-5125CAFD47A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A39FECD7-E7FD-4891-9AE0-5125CAFD47A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A39FECD7-E7FD-4891-9AE0-5125CAFD47A6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3057D234-DA0D-41D2-A77C-531348CAF336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3057D234-DA0D-41D2-A77C-531348CAF336}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3057D234-DA0D-41D2-A77C-531348CAF336}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3057D234-DA0D-41D2-A77C-531348CAF336}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

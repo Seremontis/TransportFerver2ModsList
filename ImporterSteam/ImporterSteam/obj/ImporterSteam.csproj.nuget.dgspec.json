@@ -47,6 +47,10 @@
             "HtmlAgilityPack": {
               "target": "Package",
               "version": "[1.11.39, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.13, )"
             }
           },
           "imports": [

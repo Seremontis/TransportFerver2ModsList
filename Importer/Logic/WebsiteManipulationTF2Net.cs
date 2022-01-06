@@ -1,13 +1,14 @@
 ﻿using HtmlAgilityPack;
+using Importer.Interface;
 using Importer.Model;
 using System;
 using System.Collections.Generic;
 
-namespace Importer
+namespace Importer.Logic
 {
     public class WebsiteManipulationTF2Net : IWebsiteManipulation
     {
-        public List<Website> GetUrisCategory(HtmlDocument htmlDocumet)
+        public IEnumerable<Website> GetUrisCategory(HtmlDocument htmlDocumet)
         {
             HtmlNodeCollection nodes = htmlDocumet.DocumentNode.SelectNodes("//ul[@class='inlineList filebaseSubCategories']");
             List<Website> pairs = new List<Website>();
@@ -16,7 +17,7 @@ namespace Importer
                     pairs.Add(new Website() {ParentCategory=node.ParentNode.ChildNodes.FindFirst("div").InnerText.Trim() ,Category = item.InnerText, UriPage = new Uri(item.Attributes["href"].Value) });
             return pairs;
         }
-        public List<Uri> GetPageList(HtmlDocument htmlDocument)
+        public List<Uri> GetPageList(HtmlDocument htmlDocument,Uri uri=null)
         {
             List<Uri> pairs = new List<Uri>();
             HtmlNode node = htmlDocument.DocumentNode.SelectSingleNode(".//nav[@class='pagination']");
