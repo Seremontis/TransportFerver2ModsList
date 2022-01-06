@@ -1,0 +1,669 @@
+2022-01-06 12:34:54.8591|Info|Start program | 
+2022-01-06 12:43:56.6233|Info|Start program | 
+2022-01-06 12:47:18.9248|Info|Start program | 
+2022-01-06 13:49:14.9639|Info|Start program | 
+2022-01-06 14:06:01.8729|Info|Start program | 
+2022-01-06 14:14:25.4612|Info|Start program | 
+2022-01-06 14:15:03.8379|Info|Start program | 
+2022-01-06 14:18:36.3098|Info|Start program | 
+2022-01-06 14:19:02.1381|Info|Start program | 
+2022-01-06 14:41:30.0914|Info|Start program | 
+2022-01-06 14:44:03.1699|Info|Start program | 
+2022-01-06 14:44:23.2150|Info|Start program | 
+2022-01-06 14:48:09.3376|Info|Start program | 
+2022-01-06 14:50:49.6325|Info|Start program | 
+2022-01-06 14:57:14.7571|Error|Error occured | System.NotImplementedException: The method or operation is not implemented.
+   at Importer.Logic.WebsiteManipulationSteam.SearchItems(String category, HtmlDocument htmlDocument)
+   at Importer.BuilderData.LoadItems(String category, Uri uri, HtmlDocument html)
+   at Importer.BuilderData.LoadUriNumberPages(String category, HtmlDocument page, Uri uri)
+2022-01-06 14:57:14.7670|Info|Ending program | 
+2022-01-06 15:06:03.2123|Info|Start program | 
+2022-01-06 15:06:37.7244|Error|Error occured | System.NotImplementedException: The method or operation is not implemented.
+   at Importer.Logic.WebsiteManipulationSteam.SearchItems(String category, HtmlDocument htmlDocument) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\Logic\WebsiteManipulationSteam.cs:line 64
+   at Importer.BuilderData.LoadItems(String category, Uri uri, HtmlDocument html) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 79
+   at Importer.BuilderData.LoadUriNumberPages(String category, HtmlDocument page, Uri uri) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 69
+2022-01-06 15:06:37.7480|Info|Ending program | 
+2022-01-06 15:06:55.2620|Info|Start program | 
+2022-01-06 15:07:02.4131|Error|Error occured | System.ArgumentNullException: Value cannot be null. (Parameter 'collection')
+   at System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   at System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
+   at Importer.BuilderData.LoadItems(String category, Uri uri, HtmlDocument html) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 79
+   at Importer.BuilderData.LoadUriNumberPages(String category, HtmlDocument page, Uri uri) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 69
+2022-01-06 15:07:02.4287|Info|Ending program | 
+2022-01-06 15:08:11.2422|Info|Start program | 
+2022-01-06 15:08:15.9400|Error|Error occured | System.ArgumentNullException: Value cannot be null. (Parameter 'collection')
+   at System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   at System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
+   at Importer.BuilderData.LoadItems(String category, Uri uri, HtmlDocument html) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 81
+   at Importer.BuilderData.LoadUriNumberPages(String category, HtmlDocument page, Uri uri) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 69
+2022-01-06 15:08:15.9536|Info|Ending program | 
+2022-01-06 15:08:38.8879|Info|Start program | 
+2022-01-06 15:08:45.6319|Error|Error occured | System.ArgumentNullException: Value cannot be null. (Parameter 'collection')
+   at System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   at System.Collections.Generic.List`1.AddRange(IEnumerable`1 collection)
+   at Importer.BuilderData.LoadItems(String category, Uri uri, HtmlDocument html) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 79
+   at Importer.BuilderData.LoadUriNumberPages(String category, HtmlDocument page, Uri uri) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 69
+2022-01-06 15:08:45.6319|Info|Ending program | 
+2022-01-06 15:09:27.1966|Info|Start program | 
+2022-01-06 15:32:23.1506|Info|Start program | 
+2022-01-06 15:33:12.9195|Error|Error occured | System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt64(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Int64.Parse(String s)
+   at Importer.Logic.WebsiteManipulationSteam.SearchItems(String category, HtmlDocument htmlDocument) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\Logic\WebsiteManipulationSteam.cs:line 75
+   at Importer.BuilderData.LoadItems(String category, Uri uri, HtmlDocument html) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 79
+   at Importer.BuilderData.LoadUriNumberPages(String category, HtmlDocument page, Uri uri) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 69
+2022-01-06 15:33:56.6795|Info|Start program | 
+2022-01-06 15:34:10.8332|Error|Error occured | System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt64(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Int64.Parse(String s)
+   at Importer.Logic.WebsiteManipulationSteam.SearchItems(String category, HtmlDocument htmlDocument) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\Logic\WebsiteManipulationSteam.cs:line 75
+   at Importer.BuilderData.LoadItems(String category, Uri uri, HtmlDocument html) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 79
+   at Importer.BuilderData.LoadUriNumberPages(String category, HtmlDocument page, Uri uri) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 69
+2022-01-06 15:34:10.8507|Info|Ending program | 
+2022-01-06 15:34:56.5074|Info|Start program | 
+2022-01-06 15:37:26.7370|Info|Steam mods count:1556 | 
+2022-01-06 15:37:28.6916|Info|Save file complete | 
+2022-01-06 15:37:30.8453|Info|Ending program | 
+2022-01-06 15:38:42.6650|Info|Start program | 
+2022-01-06 15:41:22.3410|Info|Start program | 
+2022-01-06 15:41:31.6648|Info|Searching mods for Tunnel... | 
+2022-01-06 15:41:31.6798|Info|Ending search mods for Tunnel | 
+2022-01-06 15:41:31.7595|Info|Searching mods for Shader... | 
+2022-01-06 15:41:31.7595|Info|Ending search mods for Shader | 
+2022-01-06 15:41:31.7791|Info|Searching mods for Passenger Harbor... | 
+2022-01-06 15:41:31.7791|Info|Ending search mods for Passenger Harbor | 
+2022-01-06 15:41:31.7956|Info|Searching mods for Campaign... | 
+2022-01-06 15:41:31.7956|Info|Ending search mods for Campaign | 
+2022-01-06 15:41:31.8321|Info|Searching mods for Shipyard... | 
+2022-01-06 15:41:31.8321|Info|Ending search mods for Shipyard | 
+2022-01-06 15:41:31.8577|Info|Searching mods for Plane... | 
+2022-01-06 15:41:31.8577|Info|Searching mods for Map... | 
+2022-01-06 15:41:31.8577|Info|Searching mods for Tram Station... | 
+2022-01-06 15:41:31.8798|Info|Ending search mods for Tram Station | 
+2022-01-06 15:41:31.8839|Info|Searching mods for Cargo Harbor... | 
+2022-01-06 15:41:31.9199|Info|Searching mods for Car... | 
+2022-01-06 15:41:31.9199|Info|Ending search mods for Cargo Harbor | 
+2022-01-06 15:41:31.9304|Info|Searching mods for Locomotive... | 
+2022-01-06 15:41:31.9463|Info|Searching mods for Street... | 
+2022-01-06 15:41:31.9463|Info|Searching mods for Misc... | 
+2022-01-06 15:41:31.9463|Info|Searching mods for Train Station... | 
+2022-01-06 15:41:31.9697|Info|Searching mods for Script Mod... | 
+2022-01-06 15:41:31.9697|Info|Searching mods for Signal... | 
+2022-01-06 15:41:32.0452|Info|Searching mods for Sound... | 
+2022-01-06 15:41:32.0780|Info|Searching mods for Bridge... | 
+2022-01-06 15:41:32.0780|Info|Searching mods for Track... | 
+2022-01-06 15:41:32.0967|Info|Searching mods for Savegame... | 
+2022-01-06 15:41:32.1230|Info|Searching mods for Tram... | 
+2022-01-06 15:41:32.1434|Info|Searching mods for Street Construction... | 
+2022-01-06 15:41:32.1434|Info|Searching mods for Airport... | 
+2022-01-06 15:41:32.1714|Info|Searching mods for Industry... | 
+2022-01-06 15:41:32.2003|Info|Searching mods for Railroad Crossing... | 
+2022-01-06 15:41:32.2003|Info|Ending search mods for Street Construction | 
+2022-01-06 15:41:32.2233|Info|Searching mods for Wagon... | 
+2022-01-06 15:41:32.2233|Info|Ending search mods for Railroad Crossing | 
+2022-01-06 15:41:32.2367|Info|Searching mods for Localization... | 
+2022-01-06 15:41:32.2742|Info|Searching mods for Tram Depot... | 
+2022-01-06 15:41:32.2742|Info|Ending search mods for Localization | 
+2022-01-06 15:41:32.2742|Info|Ending search mods for Tram Depot | 
+2022-01-06 15:41:32.3232|Info|Searching mods for Multiple Unit... | 
+2022-01-06 15:41:32.3949|Info|Searching mods for Cargo Station... | 
+2022-01-06 15:41:32.3949|Info|Ending search mods for Cargo Station | 
+2022-01-06 15:41:32.4072|Info|Searching mods for Bus... | 
+2022-01-06 15:41:32.4072|Info|Searching mods for Ship... | 
+2022-01-06 15:41:32.4601|Info|Searching mods for Truck Station... | 
+2022-01-06 15:41:32.4834|Info|Ending search mods for Truck Station | 
+2022-01-06 15:41:32.4947|Info|Searching mods for Train Depot... | 
+2022-01-06 15:41:32.4947|Info|Searching mods for Road Depot... | 
+2022-01-06 15:41:32.4947|Info|Ending search mods for Train Depot | 
+2022-01-06 15:41:32.4947|Info|Searching mods for Animal... | 
+2022-01-06 15:41:32.4947|Info|Ending search mods for Road Depot | 
+2022-01-06 15:41:32.5191|Info|Ending search mods for Animal | 
+2022-01-06 15:41:32.5191|Info|Searching mods for Track Asset... | 
+2022-01-06 15:41:32.5244|Info|Searching mods for Town Building... | 
+2022-01-06 15:41:32.5497|Info|Searching mods for Mission... | 
+2022-01-06 15:41:32.5547|Info|Ending search mods for Mission | 
+2022-01-06 15:41:32.5547|Info|Searching mods for Brush Asset... | 
+2022-01-06 15:41:32.5746|Info|Searching mods for Truck... | 
+2022-01-06 15:41:32.7856|Info|Searching mods for Bus Station... | 
+2022-01-06 15:41:32.8119|Info|Searching mods for Person... | 
+2022-01-06 15:41:32.8119|Info|Ending search mods for Person | 
+2022-01-06 15:41:34.3511|Info|Ending search mods for Ship | 
+2022-01-06 15:41:35.0721|Info|Ending search mods for Brush Asset | 
+2022-01-06 15:41:35.1348|Info|Ending search mods for Industry | 
+2022-01-06 15:41:35.2131|Info|Ending search mods for Car | 
+2022-01-06 15:41:35.4026|Info|Ending search mods for Town Building | 
+2022-01-06 15:41:35.4026|Info|Ending search mods for Airport | 
+2022-01-06 15:41:35.8875|Info|Ending search mods for Bridge | 
+2022-01-06 15:41:36.0204|Info|Ending search mods for Signal | 
+2022-01-06 15:41:36.1814|Info|Ending search mods for Sound | 
+2022-01-06 15:41:36.4903|Info|Ending search mods for Plane | 
+2022-01-06 15:41:36.8788|Info|Ending search mods for Track Asset | 
+2022-01-06 15:41:36.9518|Info|Ending search mods for Track | 
+2022-01-06 15:41:36.9617|Info|Ending search mods for Tram | 
+2022-01-06 15:41:37.0440|Info|Ending search mods for Bus | 
+2022-01-06 15:41:37.0440|Info|Ending search mods for Misc | 
+2022-01-06 15:41:37.3164|Info|Ending search mods for Train Station | 
+2022-01-06 15:41:37.3877|Info|Ending search mods for Truck | 
+2022-01-06 15:41:37.4187|Info|Ending search mods for Street | 
+2022-01-06 15:41:37.5373|Info|Ending search mods for Locomotive | 
+2022-01-06 15:41:37.7035|Info|Ending search mods for Multiple Unit | 
+2022-01-06 15:41:37.7035|Info|Ending search mods for Map | 
+2022-01-06 15:41:37.9066|Info|Ending search mods for Script Mod | 
+2022-01-06 15:41:39.5767|Info|Ending search mods for Savegame | 
+2022-01-06 15:41:44.1123|Info|Ending search mods for Wagon | 
+2022-01-06 15:41:44.7933|Info|Ending search mods for Bus Station | 
+2022-01-06 15:41:44.9338|Info|Steam mods count:8052 | 
+2022-01-06 15:41:44.9338|Info|Save file complete | 
+2022-01-06 15:41:44.9338|Info|Ending program | 
+2022-01-06 15:46:48.8546|Info|Start program | 
+2022-01-06 15:46:50.0389|Info|transportfeverNet > Searching mods for Steam... | 
+2022-01-06 15:46:50.1375|Info|transportfeverNet > Searching mods for Passenger Carriages... | 
+2022-01-06 15:46:50.3889|Info|transportfeverNet > Ending search mods for Steam | 
+2022-01-06 15:46:51.1662|Info|transportfeverNet > Searching mods for Multiple unit... | 
+2022-01-06 15:46:51.2682|Info|transportfeverNet > Searching mods for Diesel... | 
+2022-01-06 15:46:51.3502|Info|transportfeverNet > Searching mods for Trucks... | 
+2022-01-06 15:46:51.3632|Info|transportfeverNet > Searching mods for Trams... | 
+2022-01-06 15:46:51.3632|Info|transportfeverNet > Ending search mods for Trams | 
+2022-01-06 15:46:51.3632|Info|transportfeverNet > Searching mods for Script-Mods... | 
+2022-01-06 15:46:51.3817|Info|transportfeverNet > Searching mods for Buses... | 
+2022-01-06 15:46:51.3924|Info|transportfeverNet > Searching mods for Electric... | 
+2022-01-06 15:46:51.6033|Info|transportfeverNet > Ending search mods for Multiple unit | 
+2022-01-06 15:46:51.6231|Info|transportfeverNet > Searching mods for Airports and Ports... | 
+2022-01-06 15:46:51.7132|Info|transportfeverNet > Ending search mods for Diesel | 
+2022-01-06 15:46:52.2112|Info|transportfeverNet > Searching mods for Planes... | 
+2022-01-06 15:46:52.2112|Info|transportfeverNet > Searching mods for Goods carriages... | 
+2022-01-06 15:46:52.2112|Info|transportfeverNet > Ending search mods for Goods carriages | 
+2022-01-06 15:46:52.3640|Info|transportfeverNet > Searching mods for Cars... | 
+2022-01-06 15:46:52.3725|Info|transportfeverNet > Searching mods for Ships... | 
+2022-01-06 15:46:52.3725|Info|transportfeverNet > Ending search mods for Cars | 
+2022-01-06 15:46:52.3999|Info|transportfeverNet > Searching mods for Savegames... | 
+2022-01-06 15:46:52.4172|Info|transportfeverNet > Searching mods for Buildings... | 
+2022-01-06 15:46:52.4586|Info|transportfeverNet > Searching mods for Decorations, Assets etc.... | 
+2022-01-06 15:46:52.8642|Info|transportfeverNet > Ending search mods for Buses | 
+2022-01-06 15:46:52.8698|Info|transportfeverNet > Ending search mods for Buildings | 
+2022-01-06 15:46:52.8698|Info|transportfeverNet > Ending search mods for Trucks | 
+2022-01-06 15:46:52.8698|Info|transportfeverNet > Ending search mods for Planes | 
+2022-01-06 15:46:52.8698|Info|transportfeverNet > Ending search mods for Script-Mods | 
+2022-01-06 15:46:52.9004|Info|transportfeverNet > Ending search mods for Passenger Carriages | 
+2022-01-06 15:46:53.2571|Info|transportfeverNet > Searching mods for Other... | 
+2022-01-06 15:46:53.2780|Info|transportfeverNet > Searching mods for Signals, catenary, rail crossings... | 
+2022-01-06 15:46:53.2780|Info|transportfeverNet > Ending search mods for Signals, catenary, rail crossings | 
+2022-01-06 15:46:53.3044|Info|transportfeverNet > Searching mods for Train Stations... | 
+2022-01-06 15:46:53.3044|Info|transportfeverNet > Searching mods for Town and Street Names... | 
+2022-01-06 15:46:53.3044|Info|transportfeverNet > Searching mods for Railways, Streets, Bridges and Tunnels... | 
+2022-01-06 15:46:53.3044|Info|transportfeverNet > Ending search mods for Train Stations | 
+2022-01-06 15:46:53.3044|Info|transportfeverNet > Searching mods for Depots, Stops and terminals... | 
+2022-01-06 15:46:53.3394|Info|transportfeverNet > Searching mods for Maps... | 
+2022-01-06 15:46:53.3591|Info|transportfeverNet > Searching mods for Repaints... | 
+2022-01-06 15:46:53.9977|Info|transportfeverNet > Ending search mods for Other | 
+2022-01-06 15:46:53.9977|Info|transportfeverNet > Ending search mods for Depots, Stops and terminals | 
+2022-01-06 15:46:54.0300|Info|transportfeverNet > Ending search mods for Railways, Streets, Bridges and Tunnels | 
+2022-01-06 15:46:54.0300|Info|transportfeverNet > Ending search mods for Maps | 
+2022-01-06 15:46:55.3632|Info|transportfeverNet > Ending search mods for Decorations, Assets etc. | 
+2022-01-06 15:46:55.3668|Info|transportfeverNet > Ending search mods for Electric | 
+2022-01-06 15:46:55.4411|Error|Error occured | System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.RemoveAt(Int32 index)
+   at Importer.BuilderData.LoadUriNumberPages(String category, HtmlDocument page, Uri uri) in C:\Users\K2\Documents\Projects\TransportFerver2ModsList\Importer\BuilderData.cs:line 75
+2022-01-06 15:46:55.4571|Info|Ending program | 
+2022-01-06 15:48:15.4772|Info|Start program | 
+2022-01-06 15:48:17.0062|Info|transportfeverNet > Searching mods for Steam... | 
+2022-01-06 15:48:17.0908|Info|transportfeverNet > Searching mods for Electric... | 
+2022-01-06 15:48:17.5178|Info|transportfeverNet > Ending search mods for Steam | 
+2022-01-06 15:48:17.9938|Info|transportfeverNet > Searching mods for Multiple unit... | 
+2022-01-06 15:48:18.0087|Info|transportfeverNet > Searching mods for Trucks... | 
+2022-01-06 15:48:18.0087|Info|transportfeverNet > Searching mods for Goods carriages... | 
+2022-01-06 15:48:18.3270|Info|transportfeverNet > Ending search mods for Multiple unit | 
+2022-01-06 15:48:18.3270|Info|transportfeverNet > Searching mods for Planes... | 
+2022-01-06 15:48:18.3270|Info|transportfeverNet > Searching mods for Depots, Stops and terminals... | 
+2022-01-06 15:48:18.3425|Info|transportfeverNet > Searching mods for Diesel... | 
+2022-01-06 15:48:18.3515|Info|transportfeverNet > Searching mods for Buildings... | 
+2022-01-06 15:48:18.3515|Info|transportfeverNet > Searching mods for Airports and Ports... | 
+2022-01-06 15:48:18.3515|Info|transportfeverNet > Ending search mods for Airports and Ports | 
+2022-01-06 15:48:18.6440|Info|transportfeverNet > Ending search mods for Electric | 
+2022-01-06 15:48:18.9635|Info|transportfeverNet > Ending search mods for Depots, Stops and terminals | 
+2022-01-06 15:48:19.0648|Info|transportfeverNet > Ending search mods for Diesel | 
+2022-01-06 15:48:19.0999|Info|transportfeverNet > Searching mods for Ships... | 
+2022-01-06 15:48:19.1012|Info|transportfeverNet > Ending search mods for Ships | 
+2022-01-06 15:48:19.1012|Info|transportfeverNet > Searching mods for Cars... | 
+2022-01-06 15:48:19.1380|Info|transportfeverNet > Searching mods for Buses... | 
+2022-01-06 15:48:19.2071|Info|transportfeverNet > Ending search mods for Goods carriages | 
+2022-01-06 15:48:19.2592|Info|transportfeverNet > Ending search mods for Cars | 
+2022-01-06 15:48:19.2592|Info|transportfeverNet > Ending search mods for Trucks | 
+2022-01-06 15:48:19.3775|Info|transportfeverNet > Ending search mods for Buses | 
+2022-01-06 15:48:19.6384|Info|transportfeverNet > Ending search mods for Planes | 
+2022-01-06 15:48:19.6384|Info|transportfeverNet > Ending search mods for Buildings | 
+2022-01-06 15:48:20.0015|Info|transportfeverNet > Searching mods for Town and Street Names... | 
+2022-01-06 15:48:20.0015|Info|transportfeverNet > Ending search mods for Town and Street Names | 
+2022-01-06 15:48:20.0667|Info|transportfeverNet > Searching mods for Railways, Streets, Bridges and Tunnels... | 
+2022-01-06 15:48:20.7024|Info|transportfeverNet > Searching mods for Script-Mods... | 
+2022-01-06 15:48:20.7371|Info|transportfeverNet > Searching mods for Trams... | 
+2022-01-06 15:48:20.8424|Info|transportfeverNet > Ending search mods for Railways, Streets, Bridges and Tunnels | 
+2022-01-06 15:48:21.0208|Info|transportfeverNet > Ending search mods for Trams | 
+2022-01-06 15:48:21.0413|Info|transportfeverNet > Searching mods for Signals, catenary, rail crossings... | 
+2022-01-06 15:48:21.0580|Info|transportfeverNet > Searching mods for Other... | 
+2022-01-06 15:48:21.0580|Info|transportfeverNet > Searching mods for Savegames... | 
+2022-01-06 15:48:21.0704|Info|transportfeverNet > Ending search mods for Savegames | 
+2022-01-06 15:48:21.0704|Info|transportfeverNet > Searching mods for Repaints... | 
+2022-01-06 15:48:21.0857|Info|transportfeverNet > Ending search mods for Repaints | 
+2022-01-06 15:48:21.0857|Info|transportfeverNet > Searching mods for Maps... | 
+2022-01-06 15:48:21.3583|Info|transportfeverNet > Ending search mods for Signals, catenary, rail crossings | 
+2022-01-06 15:48:21.4998|Info|transportfeverNet > Ending search mods for Other | 
+2022-01-06 15:48:21.4998|Info|transportfeverNet > Ending search mods for Maps | 
+2022-01-06 15:48:22.2268|Info|transportfeverNet > Ending search mods for Script-Mods | 
+2022-01-06 15:48:22.2268|Info|transportfeverNet > Searching mods for Passenger Carriages... | 
+2022-01-06 15:48:22.2733|Info|transportfeverNet > Searching mods for Train Stations... | 
+2022-01-06 15:48:22.2733|Info|transportfeverNet > Searching mods for Decorations, Assets etc.... | 
+2022-01-06 15:48:22.5197|Info|transportfeverNet > Ending search mods for Train Stations | 
+2022-01-06 15:48:22.5874|Info|transportfeverNet > Ending search mods for Passenger Carriages | 
+2022-01-06 15:48:23.8067|Info|transportfeverNet > Ending search mods for Decorations, Assets etc. | 
+2022-01-06 15:48:23.8865|Info|Mods count:1234 | 
+2022-01-06 15:48:23.8865|Info|Save file complete | 
+2022-01-06 15:48:24.8768|Info|Steam > Searching mods for Passenger Harbor... | 
+2022-01-06 15:48:24.8832|Info|Steam > Ending search mods for Passenger Harbor | 
+2022-01-06 15:48:24.9329|Info|Steam > Searching mods for Cargo Station... | 
+2022-01-06 15:48:24.9329|Info|Steam > Ending search mods for Cargo Station | 
+2022-01-06 15:48:25.0519|Info|Steam > Searching mods for Shipyard... | 
+2022-01-06 15:48:25.0519|Info|Steam > Ending search mods for Shipyard | 
+2022-01-06 15:48:25.0990|Info|Steam > Searching mods for Person... | 
+2022-01-06 15:48:25.0990|Info|Steam > Ending search mods for Person | 
+2022-01-06 15:48:25.2077|Info|Steam > Searching mods for Campaign... | 
+2022-01-06 15:48:25.2077|Info|Steam > Ending search mods for Campaign | 
+2022-01-06 15:48:25.2273|Info|Steam > Searching mods for Tram Depot... | 
+2022-01-06 15:48:25.2273|Info|Steam > Searching mods for Cargo Harbor... | 
+2022-01-06 15:48:25.2273|Info|Steam > Ending search mods for Tram Depot | 
+2022-01-06 15:48:25.2273|Info|Steam > Searching mods for Localization... | 
+2022-01-06 15:48:25.2273|Info|Steam > Ending search mods for Cargo Harbor | 
+2022-01-06 15:48:25.2273|Info|Steam > Ending search mods for Localization | 
+2022-01-06 15:48:25.2606|Info|Steam > Searching mods for Plane... | 
+2022-01-06 15:48:25.2606|Info|Steam > Searching mods for Animal... | 
+2022-01-06 15:48:25.2606|Info|Steam > Searching mods for Bus... | 
+2022-01-06 15:48:25.2734|Info|Steam > Ending search mods for Animal | 
+2022-01-06 15:48:25.2734|Info|Steam > Searching mods for Train Depot... | 
+2022-01-06 15:48:25.2734|Info|Steam > Ending search mods for Train Depot | 
+2022-01-06 15:48:25.2734|Info|Steam > Searching mods for Ship... | 
+2022-01-06 15:48:25.3078|Info|Steam > Searching mods for Mission... | 
+2022-01-06 15:48:25.3078|Info|Steam > Searching mods for Tram Station... | 
+2022-01-06 15:48:25.3078|Info|Steam > Searching mods for Car... | 
+2022-01-06 15:48:25.3311|Info|Steam > Ending search mods for Mission | 
+2022-01-06 15:48:25.3352|Info|Steam > Searching mods for Road Depot... | 
+2022-01-06 15:48:25.3352|Info|Steam > Ending search mods for Tram Station | 
+2022-01-06 15:48:25.3352|Info|Steam > Ending search mods for Road Depot | 
+2022-01-06 15:48:25.3524|Info|Steam > Searching mods for Railroad Crossing... | 
+2022-01-06 15:48:25.3685|Info|Steam > Ending search mods for Railroad Crossing | 
+2022-01-06 15:48:25.3685|Info|Steam > Searching mods for Map... | 
+2022-01-06 15:48:25.4021|Info|Steam > Searching mods for Bridge... | 
+2022-01-06 15:48:25.4021|Info|Steam > Searching mods for Multiple Unit... | 
+2022-01-06 15:48:25.4205|Info|Steam > Searching mods for Savegame... | 
+2022-01-06 15:48:25.4205|Info|Steam > Searching mods for Industry... | 
+2022-01-06 15:48:25.4205|Info|Steam > Searching mods for Truck... | 
+2022-01-06 15:48:25.4205|Info|Steam > Searching mods for Locomotive... | 
+2022-01-06 15:48:25.4395|Info|Steam > Searching mods for Tram... | 
+2022-01-06 15:48:25.5009|Info|Steam > Searching mods for Sound... | 
+2022-01-06 15:48:25.5365|Info|Steam > Searching mods for Train Station... | 
+2022-01-06 15:48:25.5712|Info|Steam > Searching mods for Wagon... | 
+2022-01-06 15:48:25.5712|Info|Steam > Searching mods for Tunnel... | 
+2022-01-06 15:48:25.5929|Info|Steam > Searching mods for Truck Station... | 
+2022-01-06 15:48:25.6020|Info|Steam > Ending search mods for Truck Station | 
+2022-01-06 15:48:25.6020|Info|Steam > Ending search mods for Tunnel | 
+2022-01-06 15:48:25.6020|Info|Steam > Searching mods for Signal... | 
+2022-01-06 15:48:25.6572|Info|Steam > Searching mods for Town Building... | 
+2022-01-06 15:48:25.6572|Info|Steam > Searching mods for Misc... | 
+2022-01-06 15:48:25.6988|Info|Steam > Searching mods for Script Mod... | 
+2022-01-06 15:48:25.6988|Info|Steam > Searching mods for Track... | 
+2022-01-06 15:48:25.6988|Info|Steam > Searching mods for Brush Asset... | 
+2022-01-06 15:48:25.7263|Info|Steam > Searching mods for Track Asset... | 
+2022-01-06 15:48:25.7263|Info|Steam > Searching mods for Street Construction... | 
+2022-01-06 15:48:25.7688|Info|Steam > Ending search mods for Street Construction | 
+2022-01-06 15:48:25.7858|Info|Steam > Searching mods for Street... | 
+2022-01-06 15:48:25.7858|Info|Steam > Searching mods for Airport... | 
+2022-01-06 15:48:25.7962|Info|Steam > Searching mods for Shader... | 
+2022-01-06 15:48:25.7962|Info|Steam > Ending search mods for Shader | 
+2022-01-06 15:48:25.8847|Info|Steam > Searching mods for Bus Station... | 
+2022-01-06 15:48:26.1903|Info|Steam > Ending search mods for Ship | 
+2022-01-06 15:48:28.2561|Info|Steam > Ending search mods for Airport | 
+2022-01-06 15:48:28.4932|Info|Steam > Ending search mods for Bus Station | 
+2022-01-06 15:48:28.7997|Info|Steam > Ending search mods for Signal | 
+2022-01-06 15:48:28.9206|Info|Steam > Ending search mods for Brush Asset | 
+2022-01-06 15:48:28.9873|Info|Steam > Ending search mods for Industry | 
+2022-01-06 15:48:29.7833|Info|Steam > Ending search mods for Sound | 
+2022-01-06 15:48:30.2179|Info|Steam > Ending search mods for Tram | 
+2022-01-06 15:48:30.3441|Info|Steam > Ending search mods for Track | 
+2022-01-06 15:48:30.4006|Info|Steam > Ending search mods for Car | 
+2022-01-06 15:48:30.5909|Info|Steam > Ending search mods for Street | 
+2022-01-06 15:48:30.7092|Info|Steam > Ending search mods for Track Asset | 
+2022-01-06 15:48:30.7931|Info|Steam > Ending search mods for Truck | 
+2022-01-06 15:48:30.8777|Info|Steam > Ending search mods for Script Mod | 
+2022-01-06 15:48:30.9139|Info|Steam > Ending search mods for Train Station | 
+2022-01-06 15:48:30.9139|Info|Steam > Ending search mods for Bridge | 
+2022-01-06 15:48:31.0611|Info|Steam > Ending search mods for Plane | 
+2022-01-06 15:48:31.0611|Info|Steam > Ending search mods for Misc | 
+2022-01-06 15:48:31.0707|Info|Steam > Ending search mods for Town Building | 
+2022-01-06 15:48:31.1575|Info|Steam > Ending search mods for Bus | 
+2022-01-06 15:48:31.1756|Info|Steam > Ending search mods for Wagon | 
+2022-01-06 15:54:09.6213|Info|Start program | 
+2022-01-06 15:54:10.8681|Info|transportfeverNet > Searching mods for Electric... | 
+2022-01-06 15:54:10.8681|Info|transportfeverNet > Searching mods for Diesel... | 
+2022-01-06 15:54:10.9091|Info|transportfeverNet > Searching mods for Buses... | 
+2022-01-06 15:54:10.9091|Info|transportfeverNet > Searching mods for Steam... | 
+2022-01-06 15:54:10.9091|Info|transportfeverNet > Searching mods for Trams... | 
+2022-01-06 15:54:11.1430|Info|transportfeverNet > Ending search mods for Buses | 
+2022-01-06 15:54:11.9117|Info|transportfeverNet > Searching mods for Multiple unit... | 
+2022-01-06 15:54:11.9431|Info|transportfeverNet > Searching mods for Passenger Carriages... | 
+2022-01-06 15:54:11.9543|Info|transportfeverNet > Searching mods for Railways, Streets, Bridges and Tunnels... | 
+2022-01-06 15:54:11.9543|Info|transportfeverNet > Searching mods for Planes... | 
+2022-01-06 15:54:11.9995|Info|transportfeverNet > Searching mods for Decorations, Assets etc.... | 
+2022-01-06 15:54:12.1839|Info|transportfeverNet > Ending search mods for Multiple unit | 
+2022-01-06 15:54:12.3750|Info|transportfeverNet > Ending search mods for Diesel | 
+2022-01-06 15:54:12.3838|Info|transportfeverNet > Ending search mods for Electric | 
+2022-01-06 15:54:12.8409|Info|transportfeverNet > Searching mods for Trucks... | 
+2022-01-06 15:54:12.8957|Info|transportfeverNet > Searching mods for Airports and Ports... | 
+2022-01-06 15:54:12.8957|Info|transportfeverNet > Ending search mods for Airports and Ports | 
+2022-01-06 15:54:12.9002|Info|transportfeverNet > Searching mods for Town and Street Names... | 
+2022-01-06 15:54:12.9002|Info|transportfeverNet > Ending search mods for Town and Street Names | 
+2022-01-06 15:54:12.9241|Info|transportfeverNet > Searching mods for Repaints... | 
+2022-01-06 15:54:12.9241|Info|transportfeverNet > Ending search mods for Repaints | 
+2022-01-06 15:54:13.0603|Info|transportfeverNet > Searching mods for Other... | 
+2022-01-06 15:54:13.0735|Info|transportfeverNet > Searching mods for Ships... | 
+2022-01-06 15:54:13.0735|Info|transportfeverNet > Ending search mods for Ships | 
+2022-01-06 15:54:13.1082|Info|transportfeverNet > Searching mods for Buildings... | 
+2022-01-06 15:54:13.4565|Info|transportfeverNet > Ending search mods for Trucks | 
+2022-01-06 15:54:13.5061|Info|transportfeverNet > Ending search mods for Passenger Carriages | 
+2022-01-06 15:54:13.5415|Info|transportfeverNet > Searching mods for Script-Mods... | 
+2022-01-06 15:54:13.5626|Info|transportfeverNet > Searching mods for Cars... | 
+2022-01-06 15:54:13.5908|Info|transportfeverNet > Searching mods for Signals, catenary, rail crossings... | 
+2022-01-06 15:54:13.6206|Info|transportfeverNet > Searching mods for Goods carriages... | 
+2022-01-06 15:54:13.6334|Info|transportfeverNet > Searching mods for Savegames... | 
+2022-01-06 15:54:13.6334|Info|transportfeverNet > Searching mods for Train Stations... | 
+2022-01-06 15:54:13.6334|Info|transportfeverNet > Searching mods for Depots, Stops and terminals... | 
+2022-01-06 15:54:13.6334|Info|transportfeverNet > Ending search mods for Savegames | 
+2022-01-06 15:54:13.8127|Info|transportfeverNet > Ending search mods for Cars | 
+2022-01-06 15:54:13.8355|Info|transportfeverNet > Ending search mods for Script-Mods | 
+2022-01-06 15:54:14.0731|Info|transportfeverNet > Ending search mods for Signals, catenary, rail crossings | 
+2022-01-06 15:54:14.0932|Info|transportfeverNet > Ending search mods for Goods carriages | 
+2022-01-06 15:54:14.1281|Info|transportfeverNet > Ending search mods for Train Stations | 
+2022-01-06 15:56:47.0858|Info|Start program | 
+2022-01-06 15:56:48.2112|Info|transportfeverNet > Searching mods for Steam... | 
+2022-01-06 15:56:48.2112|Info|transportfeverNet > Searching mods for Trucks... | 
+2022-01-06 15:56:48.2277|Info|transportfeverNet > Searching mods for Diesel... | 
+2022-01-06 15:56:48.2635|Info|transportfeverNet > Searching mods for Multiple unit... | 
+2022-01-06 15:56:48.3280|Info|transportfeverNet > Searching mods for Passenger Carriages... | 
+2022-01-06 15:56:48.3280|Info|transportfeverNet > Searching mods for Electric... | 
+2022-01-06 15:56:48.4448|Info|transportfeverNet > Ending search mods for Steam | 
+2022-01-06 15:56:48.5411|Info|transportfeverNet > Ending search mods for Trucks | 
+2022-01-06 15:56:49.3638|Info|transportfeverNet > Searching mods for Goods carriages... | 
+2022-01-06 15:56:49.4015|Info|transportfeverNet > Searching mods for Savegames... | 
+2022-01-06 15:56:49.4015|Info|transportfeverNet > Ending search mods for Savegames | 
+2022-01-06 15:56:49.5233|Info|Steam > Searching mods for Passenger Harbor... | 
+2022-01-06 15:56:49.5233|Info|Steam > Searching mods for Cargo Harbor... | 
+2022-01-06 15:56:49.5233|Info|Steam > Ending search mods for Passenger Harbor | 
+2022-01-06 15:56:49.5233|Info|Steam > Ending search mods for Cargo Harbor | 
+2022-01-06 15:56:49.5233|Info|Steam > Searching mods for Animal... | 
+2022-01-06 15:56:49.5396|Info|Steam > Ending search mods for Animal | 
+2022-01-06 15:56:49.5624|Info|Steam > Searching mods for Tram Depot... | 
+2022-01-06 15:56:49.5624|Info|Steam > Ending search mods for Tram Depot | 
+2022-01-06 15:56:49.6146|Info|Steam > Searching mods for Localization... | 
+2022-01-06 15:56:49.6146|Info|Steam > Ending search mods for Localization | 
+2022-01-06 15:56:49.6196|Info|Steam > Searching mods for Mission... | 
+2022-01-06 15:56:49.6334|Info|Steam > Searching mods for Shipyard... | 
+2022-01-06 15:56:49.6334|Info|Steam > Ending search mods for Mission | 
+2022-01-06 15:56:49.6334|Info|Steam > Ending search mods for Shipyard | 
+2022-01-06 15:56:49.6718|Info|Steam > Searching mods for Map... | 
+2022-01-06 15:56:49.7042|Info|Steam > Searching mods for Railroad Crossing... | 
+2022-01-06 15:56:49.7229|Info|Steam > Searching mods for Tram Station... | 
+2022-01-06 15:56:49.7229|Info|Steam > Searching mods for Tunnel... | 
+2022-01-06 15:56:49.7359|Info|Steam > Ending search mods for Railroad Crossing | 
+2022-01-06 15:56:49.7460|Info|Steam > Ending search mods for Tram Station | 
+2022-01-06 15:56:49.7460|Info|Steam > Searching mods for Train Station... | 
+2022-01-06 15:56:49.7460|Info|Steam > Ending search mods for Tunnel | 
+2022-01-06 15:56:49.7750|Info|Steam > Searching mods for Cargo Station... | 
+2022-01-06 15:56:49.7750|Info|Steam > Ending search mods for Cargo Station | 
+2022-01-06 15:56:49.7750|Info|Steam > Searching mods for Locomotive... | 
+2022-01-06 15:56:49.8151|Info|Steam > Searching mods for Bridge... | 
+2022-01-06 15:56:49.8151|Info|Steam > Searching mods for Train Depot... | 
+2022-01-06 15:56:49.8719|Info|Steam > Searching mods for Person... | 
+2022-01-06 15:56:49.8904|Info|Steam > Ending search mods for Train Depot | 
+2022-01-06 15:56:49.8904|Info|Steam > Ending search mods for Person | 
+2022-01-06 15:56:49.8904|Info|Steam > Searching mods for Wagon... | 
+2022-01-06 15:56:49.9226|Info|Steam > Searching mods for Bus Station... | 
+2022-01-06 15:56:49.9226|Info|transportfeverNet > Searching mods for Trams... | 
+2022-01-06 15:56:49.9226|Info|Steam > Searching mods for Sound... | 
+2022-01-06 15:56:49.9856|Info|Steam > Searching mods for Misc... | 
+2022-01-06 15:56:49.9856|Info|transportfeverNet > Searching mods for Repaints... | 
+2022-01-06 15:56:49.9856|Info|transportfeverNet > Searching mods for Buses... | 
+2022-01-06 15:56:49.9856|Info|Steam > Searching mods for Airport... | 
+2022-01-06 15:56:50.0251|Info|Steam > Searching mods for Script Mod... | 
+2022-01-06 15:56:50.0251|Info|transportfeverNet > Ending search mods for Repaints | 
+2022-01-06 15:56:50.0407|Info|Steam > Searching mods for Car... | 
+2022-01-06 15:56:50.0407|Info|Steam > Searching mods for Street... | 
+2022-01-06 15:56:50.0407|Info|Steam > Searching mods for Signal... | 
+2022-01-06 15:56:50.1042|Info|Steam > Searching mods for Bus... | 
+2022-01-06 15:56:50.1304|Info|Steam > Searching mods for Town Building... | 
+2022-01-06 15:56:50.1344|Info|Steam > Searching mods for Industry... | 
+2022-01-06 15:56:50.1344|Info|Steam > Searching mods for Road Depot... | 
+2022-01-06 15:56:50.1344|Info|Steam > Searching mods for Brush Asset... | 
+2022-01-06 15:56:50.1544|Info|Steam > Searching mods for Savegame... | 
+2022-01-06 15:56:50.1544|Info|Steam > Searching mods for Track Asset... | 
+2022-01-06 15:56:50.1544|Info|Steam > Searching mods for Tram... | 
+2022-01-06 15:56:50.1544|Info|Steam > Ending search mods for Road Depot | 
+2022-01-06 15:56:50.1768|Info|Steam > Searching mods for Shader... | 
+2022-01-06 15:56:50.1768|Info|Steam > Ending search mods for Shader | 
+2022-01-06 15:56:50.1768|Info|Steam > Searching mods for Campaign... | 
+2022-01-06 15:56:50.1917|Info|Steam > Searching mods for Ship... | 
+2022-01-06 15:56:50.2065|Info|Steam > Ending search mods for Campaign | 
+2022-01-06 15:56:50.2314|Info|Steam > Searching mods for Truck... | 
+2022-01-06 15:56:50.2500|Info|Steam > Searching mods for Plane... | 
+2022-01-06 15:56:50.2500|Info|Steam > Searching mods for Street Construction... | 
+2022-01-06 15:56:50.2608|Info|Steam > Searching mods for Track... | 
+2022-01-06 15:56:50.2608|Info|Steam > Ending search mods for Street Construction | 
+2022-01-06 15:56:50.2838|Info|Steam > Searching mods for Truck Station... | 
+2022-01-06 15:56:50.2979|Info|Steam > Ending search mods for Truck Station | 
+2022-01-06 15:56:50.3357|Info|Steam > Searching mods for Multiple Unit... | 
+2022-01-06 15:56:50.3706|Info|transportfeverNet > Ending search mods for Diesel | 
+2022-01-06 15:56:50.4252|Info|transportfeverNet > Ending search mods for Goods carriages | 
+2022-01-06 15:56:50.4350|Info|transportfeverNet > Ending search mods for Multiple unit | 
+2022-01-06 15:56:50.5562|Info|transportfeverNet > Ending search mods for Passenger Carriages | 
+2022-01-06 15:56:50.8735|Info|transportfeverNet > Ending search mods for Electric | 
+2022-01-06 15:56:52.5153|Info|Steam > Ending search mods for Airport | 
+2022-01-06 15:56:52.7989|Info|Steam > Ending search mods for Ship | 
+2022-01-06 15:56:52.9141|Info|Steam > Ending search mods for Bus Station | 
+2022-01-06 15:56:53.4164|Info|Steam > Ending search mods for Signal | 
+2022-01-06 15:56:53.4606|Info|Steam > Ending search mods for Brush Asset | 
+2022-01-06 15:56:53.7398|Info|Steam > Ending search mods for Track Asset | 
+2022-01-06 15:56:54.0169|Info|transportfeverNet > Searching mods for Ships... | 
+2022-01-06 15:56:54.0388|Info|transportfeverNet > Ending search mods for Ships | 
+2022-01-06 15:56:54.2315|Info|Steam > Ending search mods for Tram | 
+2022-01-06 15:56:54.2661|Info|Steam > Ending search mods for Town Building | 
+2022-01-06 15:56:54.3425|Info|Steam > Ending search mods for Industry | 
+2022-01-06 15:56:54.5505|Info|transportfeverNet > Searching mods for Town and Street Names... | 
+2022-01-06 15:56:54.5505|Info|transportfeverNet > Ending search mods for Town and Street Names | 
+2022-01-06 15:56:54.7334|Info|Steam > Ending search mods for Track | 
+2022-01-06 15:56:54.8052|Info|transportfeverNet > Searching mods for Airports and Ports... | 
+2022-01-06 15:56:54.8052|Info|transportfeverNet > Ending search mods for Airports and Ports | 
+2022-01-06 15:56:54.8377|Info|transportfeverNet > Searching mods for Other... | 
+2022-01-06 15:56:54.9670|Info|transportfeverNet > Ending search mods for Trams | 
+2022-01-06 15:56:54.9976|Info|transportfeverNet > Searching mods for Signals, catenary, rail crossings... | 
+2022-01-06 15:56:55.0272|Info|Steam > Ending search mods for Bus | 
+2022-01-06 15:56:55.0566|Info|transportfeverNet > Searching mods for Script-Mods... | 
+2022-01-06 15:56:55.0566|Info|transportfeverNet > Searching mods for Planes... | 
+2022-01-06 15:56:55.0799|Info|Steam > Ending search mods for Plane | 
+2022-01-06 15:56:55.1132|Info|transportfeverNet > Searching mods for Depots, Stops and terminals... | 
+2022-01-06 15:56:55.1326|Info|transportfeverNet > Searching mods for Railways, Streets, Bridges and Tunnels... | 
+2022-01-06 15:56:55.1326|Info|transportfeverNet > Searching mods for Buildings... | 
+2022-01-06 15:56:55.1326|Info|Steam > Ending search mods for Bridge | 
+2022-01-06 15:56:55.2952|Info|transportfeverNet > Searching mods for Maps... | 
+2022-01-06 15:56:55.3629|Info|transportfeverNet > Searching mods for Decorations, Assets etc.... | 
+2022-01-06 15:56:55.4142|Info|transportfeverNet > Searching mods for Cars... | 
+2022-01-06 15:56:55.4347|Info|Steam > Ending search mods for Sound | 
+2022-01-06 15:56:55.4799|Info|Steam > Ending search mods for Truck | 
+2022-01-06 15:56:55.6928|Info|transportfeverNet > Ending search mods for Other | 
+2022-01-06 15:56:55.7011|Info|transportfeverNet > Ending search mods for Signals, catenary, rail crossings | 
+2022-01-06 15:56:55.7011|Info|transportfeverNet > Ending search mods for Buses | 
+2022-01-06 15:56:55.7011|Info|transportfeverNet > Ending search mods for Script-Mods | 
+2022-01-06 15:56:55.7336|Info|Steam > Ending search mods for Street | 
+2022-01-06 15:56:55.7601|Info|Steam > Ending search mods for Train Station | 
+2022-01-06 15:56:55.8118|Info|transportfeverNet > Ending search mods for Cars | 
+2022-01-06 15:56:55.8790|Info|Steam > Ending search mods for Script Mod | 
+2022-01-06 15:56:55.9290|Info|Steam > Ending search mods for Car | 
+2022-01-06 15:56:55.9290|Info|transportfeverNet > Ending search mods for Maps | 
+2022-01-06 15:56:56.0533|Info|Steam > Ending search mods for Locomotive | 
+2022-01-06 15:56:56.2330|Info|Steam > Ending search mods for Wagon | 
+2022-01-06 15:56:56.3057|Info|Steam > Ending search mods for Misc | 
+2022-01-06 15:56:56.7038|Info|transportfeverNet > Ending search mods for Planes | 
+2022-01-06 15:56:56.7038|Info|transportfeverNet > Ending search mods for Railways, Streets, Bridges and Tunnels | 
+2022-01-06 15:56:56.7434|Info|transportfeverNet > Searching mods for Train Stations... | 
+2022-01-06 15:56:57.1124|Info|Steam > Ending search mods for Multiple Unit | 
+2022-01-06 15:56:57.4188|Info|transportfeverNet > Ending search mods for Buildings | 
+2022-01-06 15:56:57.6527|Info|transportfeverNet > Ending search mods for Decorations, Assets etc. | 
+2022-01-06 15:56:58.2117|Info|Steam > Ending search mods for Map | 
+2022-01-06 15:56:59.1607|Info|transportfeverNet > Ending search mods for Depots, Stops and terminals | 
+2022-01-06 15:57:00.3533|Info|Steam > Ending search mods for Savegame | 
+2022-01-06 15:57:00.4776|Info|Steam > mods count: 8052 | 
+2022-01-06 15:57:00.4934|Info|Steam > Save file complete | 
+2022-01-06 15:57:03.2134|Info|transportfeverNet > Ending search mods for Train Stations | 
+2022-01-06 15:57:03.2377|Info|transportfeverNet > mods count: 1234 | 
+2022-01-06 15:57:03.2491|Info|transportfeverNet > Save file complete | 
+2022-01-06 15:57:03.2491|Info|Ending program | 
+2022-01-06 15:59:29.3670|Info|Start program | 
+2022-01-06 15:59:30.8943|Info|transportfeverNet > Searching mods for Steam... | 
+2022-01-06 15:59:31.2595|Info|transportfeverNet > Ending search mods for Steam | 
+2022-01-06 15:59:31.3923|Info|Steam > Searching mods for Shipyard... | 
+2022-01-06 15:59:31.3990|Info|Steam > Ending search mods for Shipyard | 
+2022-01-06 15:59:31.5109|Info|Steam > Searching mods for Tram Depot... | 
+2022-01-06 15:59:31.5109|Info|Steam > Ending search mods for Tram Depot | 
+2022-01-06 15:59:31.5767|Info|Steam > Searching mods for Campaign... | 
+2022-01-06 15:59:31.5767|Info|Steam > Ending search mods for Campaign | 
+2022-01-06 15:59:31.6085|Info|Steam > Searching mods for Cargo Harbor... | 
+2022-01-06 15:59:31.6085|Info|Steam > Ending search mods for Cargo Harbor | 
+2022-01-06 15:59:31.6551|Info|Steam > Searching mods for Passenger Harbor... | 
+2022-01-06 15:59:31.6551|Info|Steam > Ending search mods for Passenger Harbor | 
+2022-01-06 15:59:31.6644|Info|Steam > Searching mods for Animal... | 
+2022-01-06 15:59:31.6644|Info|Steam > Ending search mods for Animal | 
+2022-01-06 15:59:31.6848|Info|Steam > Searching mods for Tunnel... | 
+2022-01-06 15:59:31.6848|Info|Steam > Ending search mods for Tunnel | 
+2022-01-06 15:59:31.6848|Info|Steam > Searching mods for Localization... | 
+2022-01-06 15:59:31.6848|Info|Steam > Ending search mods for Localization | 
+2022-01-06 15:59:31.7269|Info|Steam > Searching mods for Person... | 
+2022-01-06 15:59:31.7269|Info|Steam > Ending search mods for Person | 
+2022-01-06 15:59:31.7269|Info|Steam > Searching mods for Mission... | 
+2022-01-06 15:59:31.7269|Info|Steam > Ending search mods for Mission | 
+2022-01-06 15:59:31.7535|Info|Steam > Searching mods for Train Depot... | 
+2022-01-06 15:59:31.7535|Info|Steam > Ending search mods for Train Depot | 
+2022-01-06 15:59:31.7911|Info|Steam > Searching mods for Tram Station... | 
+2022-01-06 15:59:31.7911|Info|Steam > Ending search mods for Tram Station | 
+2022-01-06 15:59:31.8145|Info|Steam > Searching mods for Street Construction... | 
+2022-01-06 15:59:31.8145|Info|Steam > Ending search mods for Street Construction | 
+2022-01-06 15:59:31.8374|Info|Steam > Searching mods for Truck Station... | 
+2022-01-06 15:59:31.8374|Info|Steam > Ending search mods for Truck Station | 
+2022-01-06 15:59:31.8374|Info|Steam > Searching mods for Bridge... | 
+2022-01-06 15:59:31.8739|Info|Steam > Searching mods for Savegame... | 
+2022-01-06 15:59:31.8739|Info|Steam > Searching mods for Map... | 
+2022-01-06 15:59:31.9053|Info|Steam > Searching mods for Town Building... | 
+2022-01-06 15:59:31.9054|Info|Steam > Searching mods for Tram... | 
+2022-01-06 15:59:31.9054|Info|Steam > Searching mods for Sound... | 
+2022-01-06 15:59:31.9054|Info|Steam > Searching mods for Road Depot... | 
+2022-01-06 15:59:31.9254|Info|Steam > Searching mods for Industry... | 
+2022-01-06 15:59:31.9366|Info|Steam > Searching mods for Cargo Station... | 
+2022-01-06 15:59:31.9366|Info|transportfeverNet > Searching mods for Diesel... | 
+2022-01-06 15:59:31.9539|Info|Steam > Ending search mods for Cargo Station | 
+2022-01-06 15:59:31.9539|Info|Steam > Ending search mods for Road Depot | 
+2022-01-06 15:59:31.9931|Info|transportfeverNet > Searching mods for Multiple unit... | 
+2022-01-06 15:59:32.0102|Info|Steam > Searching mods for Train Station... | 
+2022-01-06 15:59:32.0102|Info|Steam > Searching mods for Signal... | 
+2022-01-06 15:59:32.0102|Info|Steam > Searching mods for Railroad Crossing... | 
+2022-01-06 15:59:32.0394|Info|Steam > Ending search mods for Railroad Crossing | 
+2022-01-06 15:59:32.0394|Info|Steam > Searching mods for Plane... | 
+2022-01-06 15:59:32.0668|Info|Steam > Searching mods for Track... | 
+2022-01-06 15:59:32.0668|Info|Steam > Searching mods for Misc... | 
+2022-01-06 15:59:32.0668|Info|Steam > Searching mods for Ship... | 
+2022-01-06 15:59:32.0854|Info|Steam > Searching mods for Car... | 
+2022-01-06 15:59:32.0854|Info|Steam > Searching mods for Brush Asset... | 
+2022-01-06 15:59:32.1076|Info|Steam > Searching mods for Track Asset... | 
+2022-01-06 15:59:32.1302|Info|Steam > Searching mods for Shader... | 
+2022-01-06 15:59:32.1620|Info|Steam > Ending search mods for Shader | 
+2022-01-06 15:59:32.1711|Info|Steam > Searching mods for Multiple Unit... | 
+2022-01-06 15:59:32.1837|Info|Steam > Searching mods for Bus Station... | 
+2022-01-06 15:59:32.1837|Info|Steam > Searching mods for Bus... | 
+2022-01-06 15:59:32.2054|Info|transportfeverNet > Searching mods for Electric... | 
+2022-01-06 15:59:32.1837|Info|Steam > Searching mods for Locomotive... | 
+2022-01-06 15:59:32.1837|Info|transportfeverNet > Searching mods for Planes... | 
+2022-01-06 15:59:32.2415|Info|transportfeverNet > Searching mods for Ships... | 
+2022-01-06 15:59:32.2415|Info|transportfeverNet > Ending search mods for Ships | 
+2022-01-06 15:59:32.3088|Info|Steam > Searching mods for Truck... | 
+2022-01-06 15:59:32.3210|Info|Steam > Searching mods for Airport... | 
+2022-01-06 15:59:32.3809|Info|Steam > Searching mods for Street... | 
+2022-01-06 15:59:32.5070|Info|transportfeverNet > Ending search mods for Diesel | 
+2022-01-06 15:59:32.5374|Info|Steam > Searching mods for Script Mod... | 
+2022-01-06 15:59:32.6384|Info|transportfeverNet > Searching mods for Passenger Carriages... | 
+2022-01-06 15:59:32.6384|Info|transportfeverNet > Searching mods for Trams... | 
+2022-01-06 15:59:32.6384|Info|transportfeverNet > Searching mods for Buses... | 
+2022-01-06 15:59:32.6384|Info|transportfeverNet > Ending search mods for Electric | 
+2022-01-06 15:59:34.8132|Info|Steam > Ending search mods for Bus Station | 
+2022-01-06 15:59:34.8878|Info|Steam > Ending search mods for Tram | 
+2022-01-06 15:59:35.1836|Info|Steam > Ending search mods for Signal | 
+2022-01-06 15:59:35.5451|Info|Steam > Ending search mods for Ship | 
+2022-01-06 15:59:35.7771|Info|Steam > Ending search mods for Car | 
+2022-01-06 15:59:36.0167|Info|Steam > Ending search mods for Track | 
+2022-01-06 15:59:36.4632|Info|transportfeverNet > Ending search mods for Planes | 
+2022-01-06 15:59:36.6254|Info|transportfeverNet > Searching mods for Buildings... | 
+2022-01-06 15:59:36.6254|Info|transportfeverNet > Ending search mods for Trams | 
+2022-01-06 15:59:36.6869|Info|Steam > Ending search mods for Street | 
+2022-01-06 15:59:36.6869|Info|Steam > Ending search mods for Airport | 
+2022-01-06 15:59:36.7438|Info|transportfeverNet > Searching mods for Savegames... | 
+2022-01-06 15:59:36.8053|Info|transportfeverNet > Searching mods for Trucks... | 
+2022-01-06 15:59:36.8291|Info|transportfeverNet > Searching mods for Railways, Streets, Bridges and Tunnels... | 
+2022-01-06 15:59:36.8491|Info|Steam > Ending search mods for Train Station | 
+2022-01-06 15:59:36.8505|Info|Steam > Ending search mods for Track Asset | 
+2022-01-06 15:59:36.9315|Info|Steam > Ending search mods for Truck | 
+2022-01-06 15:59:36.9911|Info|Steam > Ending search mods for Bridge | 
+2022-01-06 15:59:37.0168|Info|transportfeverNet > Ending search mods for Passenger Carriages | 
+2022-01-06 15:59:37.0273|Info|Steam > Ending search mods for Town Building | 
+2022-01-06 15:59:37.0629|Info|Steam > Ending search mods for Sound | 
+2022-01-06 15:59:37.0735|Info|Steam > Ending search mods for Brush Asset | 
+2022-01-06 15:59:37.3032|Info|Steam > Ending search mods for Plane | 
+2022-01-06 15:59:37.4478|Info|Steam > Searching mods for Wagon... | 
+2022-01-06 15:59:38.0089|Info|Steam > Ending search mods for Misc | 
+2022-01-06 15:59:38.5098|Info|transportfeverNet > Searching mods for Cars... | 
+2022-01-06 15:59:38.5098|Info|Steam > Ending search mods for Industry | 
+2022-01-06 15:59:38.9868|Info|Steam > Ending search mods for Multiple Unit | 
+2022-01-06 15:59:39.5149|Info|transportfeverNet > Ending search mods for Buses | 
+2022-01-06 15:59:39.9632|Info|Steam > Ending search mods for Script Mod | 
+2022-01-06 15:59:40.4553|Info|transportfeverNet > Searching mods for Town and Street Names... | 
+2022-01-06 15:59:41.5204|Info|transportfeverNet > Searching mods for Depots, Stops and terminals... | 
+2022-01-06 15:59:42.1853|Info|Steam > Ending search mods for Locomotive | 
+2022-01-06 15:59:42.4621|Info|transportfeverNet > Searching mods for Script-Mods... | 
+2022-01-06 15:59:43.0252|Info|Steam > Ending search mods for Savegame | 
+2022-01-06 15:59:43.4626|Info|transportfeverNet > Searching mods for Decorations, Assets etc.... | 
+2022-01-06 15:59:44.4693|Info|transportfeverNet > Searching mods for Airports and Ports... | 
+2022-01-06 15:59:45.3436|Info|Steam > Ending search mods for Map | 
+2022-01-06 15:59:45.3715|Info|Steam > Ending search mods for Bus | 
+2022-01-06 15:59:45.4621|Info|transportfeverNet > Searching mods for Signals, catenary, rail crossings... | 
+2022-01-06 15:59:46.4648|Info|transportfeverNet > Searching mods for Train Stations... | 
+2022-01-06 15:59:46.8417|Info|transportfeverNet > Ending search mods for Savegames | 
+2022-01-06 15:59:46.8872|Info|transportfeverNet > Searching mods for Other... | 
+2022-01-06 15:59:46.8872|Info|transportfeverNet > Searching mods for Maps... | 
+2022-01-06 15:59:46.9359|Info|transportfeverNet > Ending search mods for Town and Street Names | 
+2022-01-06 15:59:46.9359|Info|transportfeverNet > Searching mods for Repaints... | 
+2022-01-06 15:59:46.9359|Info|transportfeverNet > Searching mods for Goods carriages... | 
+2022-01-06 15:59:46.9516|Info|transportfeverNet > Ending search mods for Repaints | 
+2022-01-06 15:59:46.9516|Info|transportfeverNet > Ending search mods for Multiple unit | 
+2022-01-06 15:59:46.9657|Info|transportfeverNet > Ending search mods for Airports and Ports | 
+2022-01-06 15:59:47.4484|Info|transportfeverNet > Ending search mods for Trucks | 
+2022-01-06 15:59:47.4484|Info|transportfeverNet > Ending search mods for Buildings | 
+2022-01-06 15:59:47.7248|Info|transportfeverNet > Ending search mods for Railways, Streets, Bridges and Tunnels | 
+2022-01-06 15:59:47.7529|Info|Steam > Ending search mods for Wagon | 
+2022-01-06 15:59:47.8530|Info|Steam > mods count: 8052 | 
+2022-01-06 15:59:47.8530|Info|Steam > Save file complete | 
+2022-01-06 15:59:48.2091|Info|transportfeverNet > Ending search mods for Cars | 
+2022-01-06 15:59:48.2118|Info|transportfeverNet > Ending search mods for Maps | 
+2022-01-06 15:59:48.2364|Info|transportfeverNet > Ending search mods for Goods carriages | 
+2022-01-06 15:59:49.7289|Info|transportfeverNet > Ending search mods for Depots, Stops and terminals | 
+2022-01-06 15:59:50.1758|Info|transportfeverNet > Ending search mods for Decorations, Assets etc. | 
+2022-01-06 15:59:50.1860|Info|transportfeverNet > Ending search mods for Train Stations | 
+2022-01-06 15:59:50.2179|Info|transportfeverNet > Ending search mods for Signals, catenary, rail crossings | 
+2022-01-06 15:59:50.2342|Info|transportfeverNet > Ending search mods for Script-Mods | 
+2022-01-06 15:59:50.9763|Info|transportfeverNet > Ending search mods for Other | 
+2022-01-06 15:59:50.9763|Info|transportfeverNet > mods count: 1234 | 
+2022-01-06 15:59:50.9763|Info|transportfeverNet > Save file complete | 
+2022-01-06 15:59:50.9763|Info|Ending program | 

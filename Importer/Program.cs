@@ -8,6 +8,8 @@ using NLog.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using NLog;
 using System.IO;
+using Importer.Logic;
+using System.Collections.Generic;
 
 namespace Importer
 {
@@ -32,8 +34,12 @@ namespace Importer
             try
             {
                 _logger.Info("Start program");
-                BuilderData builderData = new BuilderData(new DataLoader(), new WebsiteManipulationTF2Net());
-                await builderData.CreateJson(ConfigurationManager.AppSettings.Get("DefaultFolderMod"));
+                BuilderData builderDatatfnet = new BuilderData(new DataLoaderTFnet(), new WebsiteManipulationTF2Net(), Model.EnumWebsite.transportfeverNet);
+                BuilderData builderDataSteam = new BuilderData(new DataLoaderSteam(), new WebsiteManipulationSteam(), Model.EnumWebsite.Steam);
+                List<Task> tasks = new List<Task>();
+                tasks.Add(builderDatatfnet.CreateJson(ConfigurationManager.AppSettings.Get("DefaultFolderMod")));
+                tasks.Add(builderDataSteam.CreateJson(ConfigurationManager.AppSettings.Get("DefaultFolderMod")));
+                await Task.WhenAll(tasks);
             }
             catch (Exception ex)
             {
@@ -42,6 +48,7 @@ namespace Importer
             finally
             {
                 _logger.Info("Ending program");
+                Console.ReadKey();
                 LogManager.Shutdown();
             }
         }

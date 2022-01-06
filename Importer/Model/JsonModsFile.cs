@@ -24,7 +24,7 @@ namespace Importer
         public DateTime UpdateData { get; set; }
         public Uri WebsiteSource { get; set; }
         public Uri Image { get; set; }
-        public int Id { get; set; }
+        public long Id { get; set; }
         public EnumStateFile StateFile { get; set; }
         public EnumWebsite NameWebsite { get; set; }
     }
