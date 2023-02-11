@@ -667,3 +667,202 @@
 2022-01-06 15:59:50.9763|Info|transportfeverNet > mods count: 1234 | 
 2022-01-06 15:59:50.9763|Info|transportfeverNet > Save file complete | 
 2022-01-06 15:59:50.9763|Info|Ending program | 
+2023-02-11 15:06:07.4223|Info|Start program | 
+2023-02-11 15:18:16.5276|Info|Start program | 
+2023-02-11 15:18:27.5937|Info|Steam > Searching mods for Map... | 
+2023-02-11 15:18:27.5937|Info|Steam > Searching mods for Passenger Harbor... | 
+2023-02-11 15:18:27.6229|Info|Steam > Searching mods for Bus... | 
+2023-02-11 15:18:27.6229|Info|Steam > Ending search mods for Passenger Harbor | 
+2023-02-11 15:18:27.6229|Info|Steam > Searching mods for Savegame... | 
+2023-02-11 15:18:27.6461|Info|Steam > Searching mods for Truck... | 
+2023-02-11 15:18:27.6461|Info|Steam > Searching mods for Plane... | 
+2023-02-11 15:18:27.7659|Info|Steam > Searching mods for Localization... | 
+2023-02-11 15:18:27.7659|Info|Steam > Searching mods for Tram... | 
+2023-02-11 15:18:27.7659|Info|Steam > Searching mods for Street... | 
+2023-02-11 15:18:27.7787|Info|Steam > Ending search mods for Localization | 
+2023-02-11 15:18:27.8200|Info|Steam > Searching mods for Train Depot... | 
+2023-02-11 15:18:27.8508|Info|Steam > Searching mods for Town Building... | 
+2023-02-11 15:18:27.8937|Info|Steam > Searching mods for Shader... | 
+2023-02-11 15:18:27.8937|Info|Steam > Ending search mods for Train Depot | 
+2023-02-11 15:18:27.8937|Info|Steam > Ending search mods for Shader | 
+2023-02-11 15:18:27.9013|Info|Steam > Searching mods for Train Station... | 
+2023-02-11 15:18:27.9013|Info|Steam > Searching mods for Animal... | 
+2023-02-11 15:18:27.9346|Info|Steam > Searching mods for Campaign... | 
+2023-02-11 15:18:27.9486|Info|Steam > Searching mods for Mission... | 
+2023-02-11 15:18:27.9486|Info|Steam > Searching mods for Tram Station... | 
+2023-02-11 15:18:27.9640|Info|Steam > Searching mods for Car... | 
+2023-02-11 15:18:27.9640|Info|Steam > Searching mods for Cargo Harbor... | 
+2023-02-11 15:18:27.9640|Info|Steam > Searching mods for Track Asset... | 
+2023-02-11 15:18:27.9640|Info|Steam > Searching mods for Locomotive... | 
+2023-02-11 15:18:27.9640|Info|Steam > Searching mods for Industry... | 
+2023-02-11 15:18:27.9640|Info|Steam > Searching mods for Bridge... | 
+2023-02-11 15:18:27.9896|Info|Steam > Searching mods for Sound... | 
+2023-02-11 15:18:27.9896|Info|Steam > Searching mods for Misc... | 
+2023-02-11 15:18:27.9896|Info|Steam > Searching mods for Cargo Station... | 
+2023-02-11 15:18:27.9933|Info|Steam > Searching mods for Shipyard... | 
+2023-02-11 15:18:27.9933|Info|Steam > Ending search mods for Tram Station | 
+2023-02-11 15:18:27.9640|Info|Steam > Searching mods for Script Mod... | 
+2023-02-11 15:18:28.0155|Info|Steam > Searching mods for Multiple Unit... | 
+2023-02-11 15:18:28.0317|Info|Steam > Searching mods for Wagon... | 
+2023-02-11 15:18:28.0547|Info|Steam > Ending search mods for Cargo Station | 
+2023-02-11 15:18:28.0613|Info|Steam > Searching mods for Truck Station... | 
+2023-02-11 15:18:28.0613|Info|Steam > Searching mods for Airport... | 
+2023-02-11 15:18:28.0935|Info|Steam > Searching mods for Railroad Crossing... | 
+2023-02-11 15:18:28.0935|Info|Steam > Searching mods for Tram Depot... | 
+2023-02-11 15:18:28.1513|Info|Steam > Searching mods for Ship... | 
+2023-02-11 15:18:28.1652|Info|Steam > Searching mods for Road Depot... | 
+2023-02-11 15:18:28.2068|Info|Steam > Ending search mods for Road Depot | 
+2023-02-11 15:18:28.2227|Info|Steam > Searching mods for Brush Asset... | 
+2023-02-11 15:18:28.2293|Info|Steam > Ending search mods for Tram Depot | 
+2023-02-11 15:18:28.2670|Info|Steam > Searching mods for Person... | 
+2023-02-11 15:18:28.2670|Info|Steam > Searching mods for Tunnel... | 
+2023-02-11 15:18:28.2924|Info|Steam > Ending search mods for Person | 
+2023-02-11 15:18:28.3520|Info|Steam > Searching mods for Bus Station... | 
+2023-02-11 15:18:28.3544|Info|Steam > Searching mods for Street Construction... | 
+2023-02-11 15:18:28.3544|Info|Steam > Searching mods for Track... | 
+2023-02-11 15:18:28.3696|Info|Steam > Ending search mods for Tunnel | 
+2023-02-11 15:18:28.3696|Info|Steam > Searching mods for Signal... | 
+2023-02-11 15:18:28.3843|Info|Steam > Ending search mods for Street Construction | 
+2023-02-11 15:18:28.9151|Info|Steam > Ending search mods for Mission | 
+2023-02-11 15:18:28.9151|Info|Steam > Ending search mods for Animal | 
+2023-02-11 15:18:29.1116|Info|Steam > Ending search mods for Street | 
+2023-02-11 15:18:29.3410|Info|Steam > Ending search mods for Tram | 
+2023-02-11 15:18:29.4915|Info|Steam > Ending search mods for Car | 
+2023-02-11 15:18:29.6529|Info|Steam > Ending search mods for Cargo Harbor | 
+2023-02-11 15:18:29.6529|Info|Steam > Ending search mods for Shipyard | 
+2023-02-11 15:18:29.6529|Info|Steam > Ending search mods for Signal | 
+2023-02-11 15:18:29.7014|Info|Steam > Ending search mods for Railroad Crossing | 
+2023-02-11 15:18:29.8674|Info|Steam > Ending search mods for Ship | 
+2023-02-11 15:18:29.9199|Info|Steam > Ending search mods for Track Asset | 
+2023-02-11 15:18:29.9582|Info|Steam > Ending search mods for Airport | 
+2023-02-11 15:18:30.0551|Info|Steam > Ending search mods for Truck Station | 
+2023-02-11 15:18:30.2040|Info|Steam > Ending search mods for Bridge | 
+2023-02-11 15:18:30.2912|Info|Steam > Ending search mods for Sound | 
+2023-02-11 15:18:30.4792|Info|Steam > Ending search mods for Train Station | 
+2023-02-11 15:18:30.4792|Info|Steam > Ending search mods for Town Building | 
+2023-02-11 15:18:30.6297|Info|Steam > Ending search mods for Misc | 
+2023-02-11 15:18:30.6667|Info|Steam > Ending search mods for Campaign | 
+2023-02-11 15:18:30.6894|Info|Steam > Ending search mods for Truck | 
+2023-02-11 15:18:30.7401|Info|Steam > Ending search mods for Plane | 
+2023-02-11 15:18:30.7655|Info|Steam > Ending search mods for Bus | 
+2023-02-11 15:18:30.9094|Info|Steam > Ending search mods for Bus Station | 
+2023-02-11 15:18:30.9837|Info|Steam > Ending search mods for Brush Asset | 
+2023-02-11 15:18:31.0182|Info|Steam > Ending search mods for Multiple Unit | 
+2023-02-11 15:18:31.0697|Info|Steam > Ending search mods for Track | 
+2023-02-11 15:18:31.1404|Info|Steam > Ending search mods for Script Mod | 
+2023-02-11 15:18:31.1646|Info|Steam > Ending search mods for Locomotive | 
+2023-02-11 15:18:31.1912|Info|Steam > Ending search mods for Industry | 
+2023-02-11 15:18:31.6965|Info|Steam > Ending search mods for Savegame | 
+2023-02-11 15:18:31.7475|Info|Steam > Ending search mods for Wagon | 
+2023-02-11 15:18:33.2717|Info|Steam > Ending search mods for Map | 
+2023-02-11 15:18:33.3735|Info|Steam > mods count: 10844 | 
+2023-02-11 15:18:33.3735|Info|Steam > Save file complete | 
+2023-02-11 15:18:33.3735|Info|Ending program | 
+2023-02-11 15:24:46.3614|Info|Start program | 
+2023-02-11 15:26:17.5981|Info|Steam > Searching mods for Map... | 
+2023-02-11 15:26:19.5800|Info|Steam > Searching mods for Savegame... | 
+2023-02-11 15:26:19.5800|Info|Steam > Searching mods for Locomotive... | 
+2023-02-11 15:26:23.7352|Info|Steam > Searching mods for Wagon... | 
+2023-02-11 15:26:23.7352|Info|Steam > Searching mods for Multiple Unit... | 
+2023-02-11 15:26:26.0525|Info|Steam > Searching mods for Bus... | 
+2023-02-11 15:26:26.5908|Info|Steam > Searching mods for Truck... | 
+2023-02-11 15:26:27.1564|Info|Steam > Searching mods for Tram... | 
+2023-02-11 15:26:29.3004|Info|Steam > Searching mods for Ship... | 
+2023-02-11 15:26:29.5956|Info|Steam > Searching mods for Plane... | 
+2023-02-11 15:26:29.6312|Info|Steam > Searching mods for Cargo Station... | 
+2023-02-11 15:26:29.6672|Info|Steam > Ending search mods for Cargo Station | 
+2023-02-11 15:26:29.6850|Info|Steam > Searching mods for Cargo Harbor... | 
+2023-02-11 15:26:29.6970|Info|Steam > Searching mods for Passenger Harbor... | 
+2023-02-11 15:26:29.6970|Info|Steam > Ending search mods for Cargo Harbor | 
+2023-02-11 15:26:29.6970|Info|Steam > Ending search mods for Passenger Harbor | 
+2023-02-11 15:26:32.9756|Info|Steam > Searching mods for Tram Station... | 
+2023-02-11 15:26:32.9756|Info|Steam > Searching mods for Track... | 
+2023-02-11 15:26:32.9756|Info|Steam > Searching mods for Bus Station... | 
+2023-02-11 15:26:41.6327|Info|Steam > Ending search mods for Tram Station | 
+2023-02-11 15:26:43.0814|Info|Steam > Searching mods for Road Depot... | 
+2023-02-11 15:26:43.1049|Info|Steam > Searching mods for Campaign... | 
+2023-02-11 15:26:43.1303|Info|Steam > Searching mods for Airport... | 
+2023-02-11 15:26:43.1452|Info|Steam > Ending search mods for Road Depot | 
+2023-02-11 15:26:43.1452|Info|Steam > Searching mods for Tram Depot... | 
+2023-02-11 15:26:43.1452|Info|Steam > Ending search mods for Campaign | 
+2023-02-11 15:26:43.1872|Info|Steam > Searching mods for Street... | 
+2023-02-11 15:26:43.3034|Info|Steam > Searching mods for Train Depot... | 
+2023-02-11 15:26:43.3339|Info|Steam > Ending search mods for Train Depot | 
+2023-02-11 15:26:43.3628|Info|Steam > Searching mods for Town Building... | 
+2023-02-11 15:26:43.3772|Info|Steam > Ending search mods for Ship | 
+2023-02-11 15:26:43.4290|Info|Steam > Searching mods for Train Station... | 
+2023-02-11 15:26:43.5672|Info|Steam > Searching mods for Mission... | 
+2023-02-11 15:26:43.6408|Info|Steam > Searching mods for Shader... | 
+2023-02-11 15:26:43.6408|Info|Steam > Searching mods for Tunnel... | 
+2023-02-11 15:26:43.6544|Info|Steam > Searching mods for Misc... | 
+2023-02-11 15:26:43.6544|Info|Steam > Ending search mods for Mission | 
+2023-02-11 15:26:43.6882|Info|Steam > Ending search mods for Tram Depot | 
+2023-02-11 15:26:43.6882|Info|Steam > Ending search mods for Shader | 
+2023-02-11 15:26:43.6882|Info|Steam > Ending search mods for Tunnel | 
+2023-02-11 15:26:43.7059|Info|Steam > Searching mods for Person... | 
+2023-02-11 15:26:43.7229|Info|Steam > Ending search mods for Person | 
+2023-02-11 15:26:43.7555|Info|Steam > Searching mods for Railroad Crossing... | 
+2023-02-11 15:26:43.7555|Info|Steam > Searching mods for Car... | 
+2023-02-11 15:26:43.7822|Info|Steam > Searching mods for Street Construction... | 
+2023-02-11 15:26:43.7822|Info|Steam > Searching mods for Track Asset... | 
+2023-02-11 15:26:43.8233|Info|Steam > Searching mods for Brush Asset... | 
+2023-02-11 15:26:43.8233|Info|Steam > Searching mods for Truck Station... | 
+2023-02-11 15:26:43.8807|Info|Steam > Searching mods for Shipyard... | 
+2023-02-11 15:26:43.8995|Info|Steam > Searching mods for Bridge... | 
+2023-02-11 15:26:43.8995|Info|Steam > Ending search mods for Shipyard | 
+2023-02-11 15:26:43.9199|Info|Steam > Ending search mods for Street Construction | 
+2023-02-11 15:26:43.9479|Info|Steam > Searching mods for Signal... | 
+2023-02-11 15:26:43.9479|Info|Steam > Searching mods for Industry... | 
+2023-02-11 15:26:43.9908|Info|Steam > Searching mods for Script Mod... | 
+2023-02-11 15:26:43.9942|Info|Steam > Ending search mods for Truck | 
+2023-02-11 15:26:44.1577|Info|Steam > Searching mods for Animal... | 
+2023-02-11 15:26:44.3104|Info|Steam > Ending search mods for Animal | 
+2023-02-11 15:26:44.3104|Info|Steam > Searching mods for Sound... | 
+2023-02-11 15:26:44.3104|Info|Steam > Searching mods for Localization... | 
+2023-02-11 15:26:44.3104|Info|Steam > Ending search mods for Tram | 
+2023-02-11 15:26:44.3104|Info|Steam > Ending search mods for Localization | 
+2023-02-11 15:26:44.3435|Info|Steam > Ending search mods for Bus | 
+2023-02-11 15:26:44.5368|Info|Steam > Ending search mods for Bus Station | 
+2023-02-11 15:26:44.7251|Info|Steam > Ending search mods for Airport | 
+2023-02-11 15:26:44.8946|Info|Steam > Ending search mods for Wagon | 
+2023-02-11 15:26:45.0237|Info|Steam > Ending search mods for Street | 
+2023-02-11 15:26:45.0529|Info|Steam > Ending search mods for Plane | 
+2023-02-11 15:26:45.1526|Info|Steam > Ending search mods for Industry | 
+2023-02-11 15:26:45.2729|Info|Steam > Ending search mods for Signal | 
+2023-02-11 15:26:45.3359|Info|Steam > Ending search mods for Misc | 
+2023-02-11 15:26:45.3380|Info|Steam > Ending search mods for Car | 
+2023-02-11 15:26:45.3380|Info|Steam > Ending search mods for Railroad Crossing | 
+2023-02-11 15:26:45.3380|Info|Steam > Ending search mods for Track Asset | 
+2023-02-11 15:26:45.3380|Info|Steam > Ending search mods for Bridge | 
+2023-02-11 15:26:45.3380|Info|Steam > Ending search mods for Script Mod | 
+2023-02-11 15:26:45.3550|Info|Steam > Ending search mods for Truck Station | 
+2023-02-11 15:26:45.3550|Info|Steam > Ending search mods for Brush Asset | 
+2023-02-11 15:26:45.3550|Info|Steam > Ending search mods for Sound | 
+2023-02-11 15:26:46.2911|Info|Steam > Ending search mods for Train Station | 
+2023-02-11 15:26:48.3157|Info|Steam > Ending search mods for Track | 
+2023-02-11 15:26:48.4002|Info|Steam > Ending search mods for Town Building | 
+2023-02-11 15:26:48.5821|Info|Steam > Ending search mods for Map | 
+2023-02-11 15:26:48.8744|Info|Steam > Ending search mods for Locomotive | 
+2023-02-11 15:26:48.9769|Info|Steam > Ending search mods for Savegame | 
+2023-02-11 15:26:49.0337|Error|Error occured | System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: Authentication failed because the remote party sent a TLS alert: 'IllegalParameter'.
+ ---> System.ComponentModel.Win32Exception (0x80090326): Odebrano nieoczekiwany lub nieprawidłowo sformatowany komunikat.
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at HtmlAgilityPack.HtmlWeb.LoadFromWebAsync(Uri uri, Encoding encoding, NetworkCredential credentials, CancellationToken cancellationToken)
+   at Importer.Logic.DataLoaderSteam.GetHtmlAsync(Uri uri) in C:\Users\Karol\Source\Repos\TransportFerver2ModsList\Importer\Logic\DataLoaderSteam.cs:line 17
+   at Importer.BuilderData.LoadItems(String category, Uri uri, HtmlDocument html) in C:\Users\Karol\Source\Repos\TransportFerver2ModsList\Importer\BuilderData.cs:line 97
+   at Importer.BuilderData.PrepareFromFirstSubPage(Website uri) in C:\Users\Karol\Source\Repos\TransportFerver2ModsList\Importer\BuilderData.cs:line 77
+   at Importer.BuilderData.PrepareDataBeforeSave(String localPath, Boolean update) in C:\Users\Karol\Source\Repos\TransportFerver2ModsList\Importer\BuilderData.cs:line 61
+   at Importer.BuilderData.CreateJson(String localPath, Boolean update) in C:\Users\Karol\Source\Repos\TransportFerver2ModsList\Importer\BuilderData.cs:line 41
+   at Importer.Program.StartRun() in C:\Users\Karol\Source\Repos\TransportFerver2ModsList\Importer\Program.cs:line 42
+2023-02-11 15:26:49.0476|Info|Ending program | 
